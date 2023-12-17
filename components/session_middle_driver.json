@@ -1,0 +1,50 @@
+{
+    "BlockType" : "stack",
+    "Orientation" : "Horizontal",
+    "HorizontalAlignment" : "Center",
+    "VerticalAlginment":"Center",
+    "Height" : 70,
+    "Width" : 70,
+    "MarginRight" : 10,
+    "Items": [
+        {
+            "BlockType" : "stack",
+            "BackgroundImage" : "images/BgForRace/bg_driver.png",
+            "Height" : 70,
+            "Width" : 70,
+            "ColorizeBackground": {
+                "Enabled" : true,
+                "Color": "#ffffff",
+                "BlendPercentage": 100,
+            },
+            "Items" : [
+                {
+                    "BlockType" : "stack",
+                    "BackgroundImage" : "images/BgForRace/bg_driver_effect.png",
+                    "Orientation" : "Horizontal",
+                    "HorizontalAlignment" : "Center",
+                    "VerticalAlginment":"Center",
+                    "Height" : 70,
+                    "Width" : 70,
+                    "Items" : [
+                        {
+                            "BlockType" : "text",
+                            "Foreground" : "{Item.Team.Color}",
+                            "HorizontalAlignment" : "Center",
+                            "VerticalAlginment":"Center",
+                            "FontSize" : "{TableCellFontSize}",
+                            "Width" : 70,
+                            "Height" : 62,
+                            "MarginTop" : "{TableCellFontMarginTop}",
+                            "Source" : "<data>",
+                            "TextOptions" : {
+                                "HorizontalAlignment" : "Center",
+                                "FontName" : "{TW-Bo}"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+}
