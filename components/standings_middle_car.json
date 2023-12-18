@@ -5,12 +5,26 @@
     "VerticalAlginment":"Center",
     "Height" : 70,
     "Width" : 150,
+    "Triggers" : [
+        {
+            "Condition" : "{F1Mode}",
+            "Property" : "Width",
+            "Value" : "300"
+        }
+    ],
     "Items": [
         {
             "BlockType" : "stack",
             "BackgroundImage" : "images/Standing/bg_teamorcar.png",
             "Height" : 70,
             "Width" : 150,
+            "Triggers" : [
+                {
+                    "Condition" : "{F1Mode}",
+                    "Property" : "Width",
+                    "Value" : "300"
+                }
+            ],
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{Item.Team.Color}",
@@ -25,6 +39,13 @@
                     "VerticalAlginment":"Center",
                     "Height" : 70,
                     "Width" : 150,
+                    "Triggers" : [
+                        {
+                            "Condition" : "{F1Mode}",
+                            "Property" : "Width",
+                            "Value" : "300"
+                        }
+                    ],
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{Item.Team.SecondaryColor}",
@@ -39,6 +60,13 @@
                             "VerticalAlginment":"Center",
                             "Height" : 70,
                             "Width" : 150,
+                            "Triggers" : [
+                                {
+                                    "Condition" : "{F1Mode}",
+                                    "Property" : "Width",
+                                    "Value" : "300"
+                                }
+                            ],
                             "Items" : [
                                 {
                                     "BlockType" : "text",
@@ -51,14 +79,28 @@
                                     "Height" : 62,
                                     "MarginTop" : 4,
                                     "Source" : "  c",
-                                    "FontName" : "{TW-Bo}"
+                                    "FontName" : "{TW-Bo}",
+                                    "Triggers" : [
+                                        {
+                                            "Condition" : "{F1Mode}",
+                                            "Property" : "RenderIf",
+                                            "Value" : "false"
+                                        }
+                                    ]
                                 },
                                 {
                                     "BlockType" : "image",
-                                    "Source" : "images/Cars/F1 Cars/{Item.Team.Name}.png",
-                                    "Width" : 238,
+                                    "Source" : "images/Cars/F1Cars/{Item.Team.Name}.png",
+                                    "Width" : 236,
                                     "RenderIf" : false,
-                                    "HorizontalAlignment" : "Center"
+                                    "HorizontalAlignment" : "Left",
+                                    "Triggers" : [
+                                        {
+                                            "Condition" : "{F1Mode}",
+                                            "Property" : "RenderIf",
+                                            "Value" : "true"
+                                        }
+                                    ]
                                 }
                             ]
                         }
