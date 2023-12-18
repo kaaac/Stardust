@@ -13,7 +13,6 @@
                     "Background" : "#000000",
                     "Height" : 25,
                     "Width" : 32,
-                    //"Padding" : "1,1,1,1",
                     "VerticalAlignment" : "Center",
                     "ImageOptions": {
                         "Path": "{Item.Driver.Nationality.LogoPath}"

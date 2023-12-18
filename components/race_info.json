@@ -10,8 +10,8 @@
             "HorizontalAlignment" : "Center",
             "Width" : 958,
             "MarginTop" : 40,
-            "Source" : "{Session.Track.CountryName} [{Session.RaceType}Race]", //
-            "TextOptions" : {
+            "Source" : "{Session.Track.CountryName} [{Session.RaceType}Race]",
+                "TextOptions" : {
                 "HorizontalAlignment" : "Center",
                 "FontSize" : 57,
                 "Foreground" : "#ffffff",
@@ -22,7 +22,7 @@
             "BlockType" : "image",
             "MarginTop" : 50,
             "Height" : 650,
-            "Source" : "images/CircuitLayout/alltrack/track_{Session.Track.Name}.png",
+            "Source" : "images/CircuitLayout/alltrack/track_{Session.Track.CircuitName}.png",
             "HorizontalAlignment" : "Center",
             "ImageOptions" : {
                 "DefaultPath" : "images/CircuitLayout/alltrack/track_Monza.png"
@@ -42,7 +42,7 @@
                     "Items" : [
                         {
                             "BlockType" : "text",
-                            "Source" : "{Session.Track.CircuitName} - {Session.SessionType}",
+                            "Source" : "{Session.Track.CircuitName} - [{Session.SessionType}]",
                             "FontSize" : 40,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
@@ -56,7 +56,14 @@
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
-                            }
+                            },
+                            "Triggers" : [
+                                {
+                                    "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                    "Property" : "RenderIf",
+                                    "Value" : "false"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -68,7 +75,7 @@
                         {
                             "BlockType" : "image",
                             "Source" : "images/Weather/weather_{Session.WeatherType}.png",
-                            "Height" : 60,
+                            "Height" : 60
                         },
                         {
                             "BlockType" : "text",
@@ -87,6 +94,13 @@
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
                             }
+                        }
+                    ],
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                            "Property" : "RenderIf",
+                            "Value" : "false"
                         }
                     ]
                 }
@@ -146,7 +160,7 @@
                         {
                             "BlockType" : "image",
                             "Source" : "images/Weather/temperature.png",
-                            "Height" : 60,
+                            "Height" : 60
                         },
                         {
                             "BlockType" : "text",
@@ -165,6 +179,13 @@
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
                             }
+                        }
+                    ],
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                            "Property" : "RenderIf",
+                            "Value" : "false"
                         }
                     ]
                 }

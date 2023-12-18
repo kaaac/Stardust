@@ -112,7 +112,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_position",
+                                                        "ComponentName": "session_middle_position"
                                                     }
                                                 },
                                                 {
@@ -135,7 +135,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_drivername",
+                                                        "ComponentName": "session_middle_drivername"
                                                     }
                                                 },
                                                 {
@@ -144,7 +144,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_team",
+                                                        "ComponentName": "session_middle_team"
                                                     }
                                                 },
                                                 {
@@ -153,7 +153,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_gap",
+                                                        "ComponentName": "session_middle_gap"
                                                     }
                                                 },
                                                 {
@@ -167,10 +167,10 @@
                                                 },
                                                 {
                                                     "Header" : "",
-                                                    "Name" : "Standings-start",
+                                                    "Name" : "stings-start",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data_start",
+                                                        "ComponentName" : "race_stintsleft"
                                                     }
                                                 },
                                                 {
@@ -184,7 +184,14 @@
                                                             "Vars" : {
                                                                 "type" : "BgForRace"
                                                             }
-                                                        }
+                                                        },
+                                                        "Triggers" : [
+                                                            {
+                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                                                "Property" : "RenderIf",
+                                                                "Value" : "false"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
@@ -194,7 +201,14 @@
                                                     {
                                                         "BlockType" : "component",
                                                         "ComponentName": "race_fastlap"
-                                                    }
+                                                    },
+                                                    "Triggers" : [
+                                                        {
+                                                            "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                                            "Property" : "RenderIf",
+                                                            "Value" : "false"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Header" : "Penalties",

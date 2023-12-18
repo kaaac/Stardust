@@ -3,17 +3,9 @@
     "Items" : [
         {
             "BlockType" : "stack",
-            "Width" : 15,
-            "Height" : 70,
-            "BackgroundImage" : "images/BgForRace/bg_start.png",
-            "ColorizeBackground": {
-                "Enabled" : true,
-                "Color": "{RightPartEffectColor}",
-                "BlendPercentage": 100,
-            },
             "Triggers" : [
                 {
-                    "Condition" : "{Item.Index, Converter=NumberIsOdd}",
+                    "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
                     "Property" : "RenderIf",
                     "Value" : "false"
                 }
@@ -23,16 +15,71 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/BgForRace/bg_start_effect.png",
+                    "BackgroundImage" : "images/BgForRace/bg_start.png",
+                    "ColorizeBackground": {
+                        "Enabled" : true,
+                        "Color": "{RightPartEffectColor}",
+                        "BlendPercentage": 100,
+                    },
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Item.Index, Converter=NumberIsOdd}",
+                            "Property" : "RenderIf",
+                            "Value" : "false"
+                        }
+                    ],
                     "Items" : [
                         {
-                            "BlockType" : "shape",
+                            "BlockType" : "stack",
                             "Width" : 15,
                             "Height" : 70,
-                            "ShapeOptions" : {
-                                "ShapeType" : "Rectangle",
-                                "Fill" : "#00000000"
-                            }
+                            "BackgroundImage" : "images/BgForRace/bg_start_effect.png",
+                            "Items" : [
+                                {
+                                    "BlockType" : "shape",
+                                    "Width" : 15,
+                                    "Height" : 70,
+                                    "ShapeOptions" : {
+                                        "ShapeType" : "Rectangle",
+                                        "Fill" : "#00000000"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "BlockType" : "stack",
+                    "Width" : 15,
+                    "Height" : 70,
+                    "BackgroundImage" : "images/BgForRace/bg_start.png",
+                    "ColorizeBackground": {
+                        "Enabled" : true,
+                        "Color": "{RightPartEffectColorOdd}",
+                        "BlendPercentage": 100,
+                    },
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Item.Index, Converter=NumberIsEven}",
+                            "Property" : "RenderIf",
+                            "Value" : "false"
+                        }
+                    ],
+                    "Items" : [
+                        {
+                            "BlockType" : "stack",
+                            "Width" : 15,
+                            "Height" : 70,
+                            "BackgroundImage" : "images/BgForRace/bg_start_effect.png",
+                            "Items" : [
+                                {
+                                    "BlockType" : "text",
+                                    "Width" : 15,
+                                    "Height" : 70,
+                                    "Source" : "g",
+                                    "Foreground" : "#00000000"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -40,17 +87,9 @@
         },
         {
             "BlockType" : "stack",
-            "Width" : 15,
-            "Height" : 70,
-            "BackgroundImage" : "images/BgForRace/bg_start.png",
-            "ColorizeBackground": {
-                "Enabled" : true,
-                "Color": "{RightPartEffectColorOdd}",
-                "BlendPercentage": 100,
-            },
             "Triggers" : [
                 {
-                    "Condition" : "{Item.Index, Converter=NumberIsEven}",
+                    "Condition" : "{Session.IsLiveData}",
                     "Property" : "RenderIf",
                     "Value" : "false"
                 }
@@ -60,16 +99,71 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/BgForRace/bg_start_effect.png",
+                    "BackgroundImage" : "images/BgForRace/bg_start_alt.png",
+                    "ColorizeBackground": {
+                        "Enabled" : true,
+                        "Color": "{RightPartEffectColor}",
+                        "BlendPercentage": 100,
+                    },
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Item.Index, Converter=NumberIsOdd}",
+                            "Property" : "RenderIf",
+                            "Value" : "false"
+                        }
+                    ],
                     "Items" : [
                         {
-                            "BlockType" : "shape",
+                            "BlockType" : "stack",
                             "Width" : 15,
                             "Height" : 70,
-                            "ShapeOptions" : {
-                                "ShapeType" : "Rectangle",
-                                "Fill" : "#00000000"
-                            }
+                            "BackgroundImage" : "images/BgForRace/bg_start_effect_alt.png",
+                            "Items" : [
+                                {
+                                    "BlockType" : "shape",
+                                    "Width" : 15,
+                                    "Height" : 70,
+                                    "ShapeOptions" : {
+                                        "ShapeType" : "Rectangle",
+                                        "Fill" : "#00000000"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "BlockType" : "stack",
+                    "Width" : 15,
+                    "Height" : 70,
+                    "BackgroundImage" : "images/BgForRace/bg_start_alt.png",
+                    "ColorizeBackground": {
+                        "Enabled" : true,
+                        "Color": "{RightPartEffectColorOdd}",
+                        "BlendPercentage": 100,
+                    },
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Item.Index, Converter=NumberIsEven}",
+                            "Property" : "RenderIf",
+                            "Value" : "false"
+                        }
+                    ],
+                    "Items" : [
+                        {
+                            "BlockType" : "stack",
+                            "Width" : 15,
+                            "Height" : 70,
+                            "BackgroundImage" : "images/BgForRace/bg_start_effect_alt.png",
+                            "Items" : [
+                                {
+                                    "BlockType" : "text",
+                                    "Width" : 15,
+                                    "Height" : 70,
+                                    "Source" : "g",
+                                    "Foreground" : "#00000000"
+                                }
+                            ]
                         }
                     ]
                 }

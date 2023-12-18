@@ -150,7 +150,14 @@
                                                             "Vars" : {
                                                                 "number" : "1"
                                                             }
-                                                        }
+                                                        },
+                                                        "Triggers" : [
+                                                            {
+                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                                                "Property" : "RenderIf",
+                                                                "Value" : "false"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
@@ -164,7 +171,14 @@
                                                             "Vars" : {
                                                                 "number" : "2"
                                                             }
-                                                        }
+                                                        },
+                                                        "Triggers" : [
+                                                            {
+                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                                                "Property" : "RenderIf",
+                                                                "Value" : "false"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
@@ -178,7 +192,14 @@
                                                             "Vars" : {
                                                                 "number" : "3"
                                                             }
-                                                        }
+                                                        },
+                                                        "Triggers" : [
+                                                            {
+                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                                                "Property" : "RenderIf",
+                                                                "Value" : "false"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
@@ -192,15 +213,22 @@
                                                             "Vars" : {
                                                                 "type" : "BgForQuali"
                                                             }
-                                                        }
+                                                        },
+                                                        "Triggers" : [
+                                                            {
+                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
+                                                                "Property" : "RenderIf",
+                                                                "Value" : "false"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
                                                     "Header" : "",
-                                                    "Name" : "Standings-finish",
+                                                    "Name" : "quali-finish",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data_finish",
+                                                        "ComponentName" : "quali_data_finish"
                                                     }
                                                 }
                                             ]
