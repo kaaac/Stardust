@@ -6,7 +6,7 @@
     "ColorizeBackground": {
         "Enabled" : true,
         "Color": "{RightPartEffectColor}",
-        "BlendPercentage": 100,
+        "BlendPercentage": 100
     },
     "Items" : [
         {

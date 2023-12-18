@@ -3,7 +3,7 @@
     "ItemStackOptions" : {
         "ItemSource" : "{Session.Drivers}",
         "Limit" : 1,
-        //"OrderBy" : "{Item.IsOverallFastestSector1}",
+        "OrderBy" : "{Item.IsOverallFastestSector1}",
         "FilterMember" : "{Item.IsOverallFastestSector1}",
         "FilterMemberValue" : "true",
         "Template" : 

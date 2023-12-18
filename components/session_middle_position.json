@@ -16,7 +16,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "#D2B200",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {
@@ -34,7 +34,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "#AEB6BF",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {
@@ -52,7 +52,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "#C28F34",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {
@@ -70,7 +70,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "#505050",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {

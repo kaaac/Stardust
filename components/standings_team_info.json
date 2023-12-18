@@ -61,18 +61,7 @@
                             }
                         }
                     }
-                },
-                //{
-                //    "BlockType" : "text",
-                //    "Source" : "{Standings.TeamSeasonLeader.FullName}",
-                //    "FontSize" : 40,
-                //    "HorizontalAlignment" : "Right",
-                //    "TextOptions" : {
-                //        "Foreground" : "{ForeWhite}",
-                //        "FontName" : "{TW-Bo}",
-                //        "HorizontalAlignment" : "Right"
-                //    }
-                //}
+                }
             ]
         },
         {
@@ -91,7 +80,7 @@
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{Item.Team.Color}",
-                        "BlendPercentage": 100,
+                        "BlendPercentage": 100
                     },
                     "Items": [
                         {
@@ -103,7 +92,7 @@
                             "TextOptions" : {
                                 "HorizontalAlignment" : "Center",
                                 "FontName" : "{TW-Bo}",
-                                "FontSize" : 44,
+                                "FontSize" : 44
                             }
                         },
                         {
@@ -114,7 +103,7 @@
                             "TextOptions" : {
                                 "HorizontalAlignment" : "Center",
                                 "FontName" : "{TW-Bo}",
-                                "FontSize" : 44,
+                                "FontSize" : 44
                             }
                         }
                     ]

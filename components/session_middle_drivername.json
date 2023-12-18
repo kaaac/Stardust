@@ -14,7 +14,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{Item.Team.Color}",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {
@@ -32,7 +32,6 @@
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",
                             "FontSize" : "{TableCellFontSize}",
-                            //"Width" : 400,
                             "Height" : 62,
                             "MarginTop" : "{TableCellFontMarginTop}",
                             "MarginLeft" : 15,
@@ -44,6 +43,6 @@
                     ]
                 }
             ]
-        },
+        }
     ]
 }

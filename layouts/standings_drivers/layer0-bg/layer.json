@@ -12,7 +12,7 @@
                         "BlockType": "image",
                         "BackgroundImage" : "images/bg_effect.png",
                         "ImageOptions" : {
-                            "Path": "images/bg_efgfssect.png",
+                            "Path": "images/bg_efgfssect.png"
                         }
                     }
                 ]

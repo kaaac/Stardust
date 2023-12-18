@@ -14,7 +14,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{Item.Team.Color}",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {
@@ -28,7 +28,7 @@
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{Item.Team.SecondaryColor}",
-                        "BlendPercentage": 100,
+                        "BlendPercentage": 100
                     },
                     "Items" : [
                         {
@@ -67,6 +67,6 @@
                     ]
                 }
             ]
-        },
+        }
     ]
 }

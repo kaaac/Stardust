@@ -10,8 +10,8 @@
     "TW-Sb":"TitilliumWeb-SemiBold",
     "TW-SbI":"TitilliumWeb-SemiBoldItalic",
     "TW-Re":"TitilliumWeb-Regular",
-    "RightPartEffectColor" : "#F2F2F2", // #B2B2B2
-    "RightPartEffectColorOdd" : "#B2B2B2", // 
+    "RightPartEffectColor" : "#F2F2F2",
+    "RightPartEffectColorOdd" : "#B2B2B2",
     "TableCellFontSize" : 45,
     "TableCellFontMarginTop" : 3,
     "MostOfMarginTop" : 10,

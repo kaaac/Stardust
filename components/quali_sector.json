@@ -47,7 +47,7 @@
                             "TextOptions" : {
                                 "HorizontalAlignment" : "Center",
                                 "FontName" : "{TW-Sb}"
-                            },
+                            }
                         }
                     ]
                 },
@@ -80,10 +80,10 @@
                                     "TextOptions" : {
                                         "HorizontalAlignment" : "Center",
                                         "FontName" : "{TW-Sb}"
-                                    },
+                                    }
                                 }
                             ]
-                        },
+                        }
                     ]
                 }
             ]
@@ -129,7 +129,7 @@
                             "TextOptions" : {
                                 "HorizontalAlignment" : "Center",
                                 "FontName" : "{TW-Sb}"
-                            },
+                            }
                         }
                     ]
                 },
@@ -162,10 +162,10 @@
                                     "TextOptions" : {
                                         "HorizontalAlignment" : "Center",
                                         "FontName" : "{TW-Sb}"
-                                    },
+                                    }
                                 }
                             ]
-                        },
+                        }
                     ]
                 }
             ]

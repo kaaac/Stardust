@@ -97,7 +97,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "standings_middle_drivername",
+                                                        "ComponentName": "standings_middle_drivername"
                                                     }
                                                 },
                                                 {
@@ -106,7 +106,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "standings_middle_driverteam",
+                                                        "ComponentName": "standings_middle_driverteam"
                                                     }
                                                 },
                                                 {
@@ -230,7 +230,7 @@
                                                     "Name" : "Standings-finish",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data_finish",
+                                                        "ComponentName" : "standings_data_finish"
                                                     }
                                                 }
                                             ]

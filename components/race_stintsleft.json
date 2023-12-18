@@ -19,7 +19,7 @@
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColor}",
-                        "BlendPercentage": 100,
+                        "BlendPercentage": 100
                     },
                     "Triggers" : [
                         {
@@ -56,7 +56,7 @@
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColorOdd}",
-                        "BlendPercentage": 100,
+                        "BlendPercentage": 100
                     },
                     "Triggers" : [
                         {
@@ -103,7 +103,7 @@
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColor}",
-                        "BlendPercentage": 100,
+                        "BlendPercentage": 100
                     },
                     "Triggers" : [
                         {
@@ -140,7 +140,7 @@
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColorOdd}",
-                        "BlendPercentage": 100,
+                        "BlendPercentage": 100
                     },
                     "Triggers" : [
                         {

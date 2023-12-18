@@ -37,27 +37,14 @@
             "MarginRight" : 80,
             "MarginTop" : 30,
             "Items" : [
-                //{
-                //    "BlockType" : "itemstack",
-                //    "ItemStackOptions":{
-                //        "ItemSource" : "{Season.Championship.Games}",
-                //        //"Limit" : 1,
-                //        "Template" : {
-                //            "BlockType" : "text",
-                //            "Source" : "{Item.Name}s",
-                //            "FontName" : "{TW-Bo}",
-                //            "Foreground" : "#ffffff",
-                //            "FontSize" : 90
-                //        },
-                //    }
-                //},
+
                 {
                     "BlockType" : "image",
                     "Source" : "{Season.LeagueInfo.LeagueLogo}",
                     "FontName" : "{TW-Boi}",
                     "Foreground" : "#ffffff",
                     "Height" : 90,
-                    "MarginTop" : 30,
+                    "MarginTop" : 30
                 }
             ]
         }

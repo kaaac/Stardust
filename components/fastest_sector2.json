@@ -4,8 +4,8 @@
         "ItemSource" : "{Session.Drivers}",
         "Limit" : 1,
         "OrderBy" : "{Item.IsOverallFastestSector2}",
-        //"FilterMember" : "{Item.IsOverallFastestSector1}",
-        //"FilterMemberValue" : "true",
+        "FilterMember" : "{Item.IsOverallFastestSector1}",
+        "FilterMemberValue" : "true",
         "Template" : 
         {
             "BlockType" : "text",

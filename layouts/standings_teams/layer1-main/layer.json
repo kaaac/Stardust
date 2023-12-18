@@ -216,7 +216,7 @@
                                                     "Name" : "Standings-finish",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data_finish",
+                                                        "ComponentName" : "standings_data_finish"
                                                     }
                                                 }
                                             ]

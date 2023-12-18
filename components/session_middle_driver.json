@@ -15,7 +15,7 @@
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "#ffffff",
-                "BlendPercentage": 100,
+                "BlendPercentage": 100
             },
             "Items" : [
                 {
@@ -45,6 +45,6 @@
                     ]
                 }
             ]
-        },
+        }
     ]
 }
