@@ -3,6 +3,5 @@
     "F1Mode" : true,
     "WidthOfRaceStintsCell" : 389,
     "DriverStandingsRowSpacing" : 15,
-    "TeamStandingsRowSpacing" : 34,
-    "ForeWhite" : "#ffffff"
+    "TeamStandingsRowSpacing" : 34
 }

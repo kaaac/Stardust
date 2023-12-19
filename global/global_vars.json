@@ -12,6 +12,7 @@
     "TW-Re":"TitilliumWeb-Regular",
     "RightPartEffectColor" : "#F2F2F2",
     "RightPartEffectColorOdd" : "#B2B2B2",
+    "ForeWhite" : "#ffffff",
     "TableCellFontSize" : 45,
     "TableCellFontMarginTop" : 3,
     "MostOfMarginTop" : 10,

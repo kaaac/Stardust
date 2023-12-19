@@ -70,7 +70,7 @@
                             "Items" : [
                                 {
                                     "BlockType" : "text",
-                                    "Foreground" : "#000000",
+                                    "Foreground" : "#ffffff",
                                     "HorizontalAlignment" : "Center",
                                     "VerticalAlginment":"Center",
                                     "FontSize" : "{TableCellFontSize}",
@@ -78,7 +78,7 @@
                                     "Height" : 62,
                                     "MarginTop" : "{TableCellFontMarginTop}",
                                     "Source" : "{Item.Team.Name}",
-                                    "FontName" : "{TW-Re}",
+                                    "FontName" : "{TW-Bo}",
                                     "TextOptions" : {
                                         "HorizontalAlignment" : "Right"
                                     },
