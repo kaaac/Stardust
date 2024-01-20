@@ -2,7 +2,8 @@
   "Name": "Stardust",
   "Author": "Caccia & Kaac",
   "ThemeStyle": "Light",
-  "Version": "1",
+  "Version": "2",
   "UseDefaultLayouts": false,
-  "IsNewRenderer": true
+  "IsNewRenderer": true,
+  "Description" : "Winner of RLT 2023 Theme Contest"
 }
