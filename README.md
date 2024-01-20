@@ -1,3 +1,5 @@
+# Winner of 2023 Racing League Tools Theme Contest
+
 # Stardust Theme for Racing League Tools
 
 We are very excited to introduce you to the Racing League Tools theme by Caccia.
