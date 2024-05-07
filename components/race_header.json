@@ -1,10 +1,11 @@
 {
+    "ComponentName": "race_header",
     "BlockType" : "dock",
     "Orientation" : "Horizontal",
     "Items" : [
         {
             "BlockType" : "stack",
-            "HorizontalAlignment" : "left",
+            "HorizontalAlignment" : "Left",
             "MarginLeft" : 80,
             "MarginTop" : 30,
             "Items" : [

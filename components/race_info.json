@@ -1,4 +1,5 @@
 {
+    "ComponentName": "race_info",
     "BlockType" : "stack",
     "Height" : 1292,
     "Width" : 958,
@@ -123,7 +124,7 @@
                             "ItemStackOptions" : {
                                 "ItemSource" : "{Session.Drivers}",
                                 "Limit" : 1,
-                                "Template" : 
+                                "ItemTemplate" : 
                                 {
                                     "BlockType" : "stack",
                                     "Orientation" : "Horizontal",

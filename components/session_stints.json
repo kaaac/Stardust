@@ -1,4 +1,5 @@
 {
+    "ComponentName": "session_stints",
     "BlockType" : "stack",
     "Items" : [
         {
@@ -62,7 +63,7 @@
                                     "ItemStackOptions": {
                                         "ItemSource": "{Item.Stints}",
                                         "ItemSpacing" : 4,
-                                        "Template": {
+                                        "ItemTemplate": {
                                             "BlockType": "stack",
                                             "VerticalAlignment": "Bottom",
                                             "MarginRight" : 4,
@@ -160,7 +161,7 @@
                                     "ItemStackOptions": {
                                         "ItemSource": "{Item.Stints}",
                                         "ItemSpacing" : 4,
-                                        "Template": {
+                                        "ItemTemplate": {
                                             "BlockType": "stack",
                                             "VerticalAlignment": "Bottom",
                                             "MarginRight" : 4,

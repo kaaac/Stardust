@@ -1,0 +1,51 @@
+{
+    "Properties" : [
+        {
+            "Name" : "StreamerAndCommentary",
+            "PublicName" : "Streamer and Commentary",
+            "Type" : "String",
+            "DefaultValue" : "Caccia & Teste",
+            "Category": "Placeholders"
+        },
+        {
+            "Name" : "F1Mode",
+            "PublicName" : "F1Mode",
+            "Type": "Bool",
+            "Description": "Add F1 Cars to results to visualize teams",
+            "DefaultValue" : true,
+            "Category": "Theme Mode"
+        },
+        {
+            "Name" : "WidthOfRaceStintsCell",
+            "PublicName" : "WidthOfRaceStintsCell",
+            "Type" : "Integer",
+            "DefaultValue" : 389,
+            "Category" : "Misc"
+        },
+        {
+            "Name" : "DriverStandingsRowSpacing",
+            "PublicName" : "DriverStandingsRowSpacing",
+            "Type" : "Integer",
+            "DefaultValue" : 15,
+            "Category" : "Misc"
+        },
+        {
+            "Name" : "TeamStandingsRowSpacing",
+            "PublicName" : "TeamStandingsRowSpacing",
+            "Type" : "Integer",
+            "DefaultValue" : 34,
+            "Category" : "Misc"
+        }
+    ],
+    "Categories": [
+        {
+            "Name": "Theme Mode"
+        },
+        {
+            "Name" : "Placeholders"
+        },
+        {
+            "Name" : "Misc"
+        }
+    ]
+}

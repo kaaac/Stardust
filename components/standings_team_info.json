@@ -1,4 +1,5 @@
 {
+    "ComponentName": "standings_team_info",
     "BlockType" : "stack",
     "Height" : 1018,
     "Width" : 958,
@@ -49,7 +50,7 @@
                     "ItemStackOptions" : {
                         "ItemSource" : "{Standings.Teams}",
                         "Limit" : 1,
-                        "Template" : {
+                        "ItemTemplate" : {
                             "BlockType" : "text",
                             "Source" : "{Item.Team.Name}",
                             "FontSize" : 40,
@@ -71,7 +72,7 @@
             "ItemStackOptions" : {
                 "ItemSource" : "{Standings.Teams}",
                 "Limit" : 1,
-                "Template" : {
+                "ItemTemplate" : {
                     "BlockType" : "stack",
                     "Orientation" : "Vertical",
                     "Width" : 854,

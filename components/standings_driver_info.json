@@ -1,4 +1,4 @@
-{
+{"ComponentName": "standings_driver_info",
     "BlockType" : "stack",
     "Height" : 1718,
     "Width" : 958,
@@ -40,7 +40,7 @@
             "ItemStackOptions" : {
                 "ItemSource" : "{Standings.Drivers}",
                 "Limit" : 1,
-                "Template" : {
+                "ItemTemplate" : {
                     "BlockType" : "text",
                     "Source" : "{Item.Driver.Name}",
                     "FontSize" : 90,
@@ -149,7 +149,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{CountP1}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -204,7 +204,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{CountQualP1}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -259,7 +259,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{RaceFastestLapCount}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -314,7 +314,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{RaceDriverDayCount}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -369,7 +369,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{PenaltyPoints}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -424,7 +424,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{CountDnf}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",

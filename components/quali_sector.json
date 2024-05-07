@@ -1,4 +1,5 @@
 {
+    "ComponentName": "quali_sector",
     "BlockType" : "stack",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",

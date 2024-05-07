@@ -1,4 +1,5 @@
 {
+    "ComponentName": "standings_most",
     "BlockType" : "dock",
     "Orientation" : "Horizontal",
     "MarginLeft" : 40,
@@ -25,7 +26,7 @@
                         "ItemSource" : "{Standings.Drivers}",
                         "OrderByDescending" : "<data>",
                         "Limit" : 1,
-                        "Template" : {
+                        "ItemTemplate" : {
                             "BlockType" : "text",
                             "Source" : " {Item.Driver.Name} - <data>",
                             "FontSize" : 40,
