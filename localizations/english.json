@@ -1,7 +1,11 @@
 {
+  "Name": "English",
+  "Id" : "en-US",
+  "Strings" : {
     "MainRace" : "Grand Prix",
     "SprintRace" : "Sprint",
     "PracticeQ" : "Practice",
     "QualificationQ" : "Quali",
     "RegularRace" : "GrandPrix"
+  }
 }

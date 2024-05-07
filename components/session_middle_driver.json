@@ -1,4 +1,5 @@
 {
+    "ComponentName": "session_middle_driver",
     "BlockType" : "stack",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",
@@ -16,7 +17,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_driver.png",
+            "BackgroundImage" : "BgForRace/bg_driver.png",
             "Height" : 70,
             "Width" : 70,
             "Triggers" : [
@@ -29,7 +30,7 @@
                         },
                         {
                             "Property" : "BackgroundImage",
-                            "Value" : "images/BgForRace/bg_driver_f1.png"
+                            "Value" : "BgForRace/bg_driver_f1.png"
                         }
                     ]
                     
@@ -43,7 +44,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_driver_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_driver_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -59,7 +60,7 @@
                                 },
                                 {
                                     "Property" : "BackgroundImage",
-                                    "Value" : "images/BgForRace/bg_driver_f1_effect.png"
+                                    "Value" : "BgForRace/bg_driver_f1_effect.png"
                                 }
                             ]
                             
@@ -90,7 +91,7 @@
                         },
                         {
                             "BlockType" : "image",
-                            "Source" : "images/f1drivers/{Item.Team.Name}_{Item.SeatPosition}.png",
+                            "Source" : "f1drivers/{Item.Team.Name}_{Item.SeatPosition}.png",
                             "RenderIf" : false,
                             "Width" : 63,
                             "MarginTop" : 7,

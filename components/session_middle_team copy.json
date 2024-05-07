@@ -8,7 +8,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_teamorcar.png",
+            "BackgroundImage" : "BgForRace/bg_teamorcar.png",
             "Height" : 70,
             "Width" : 400,
             "ColorizeBackground": {
@@ -19,7 +19,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_teamorcar_second_color.png",
+                    "BackgroundImage" : "BgForRace/bg_teamorcar_second_color.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -33,7 +33,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForRace/bg_teamorcar_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_teamorcar_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",

@@ -1,14 +1,16 @@
-{
+{"ComponentName": "standings_driver_info",
     "BlockType" : "stack",
     "Height" : 1718,
     "Width" : 958,
-    "BackgroundImage" : "images/Standing/bg_info_driver.png",
+    "BackgroundImage" : "Standing/bg_info_driver.png",
     "Orientation" : "Vertical",
     "Items" : [
         {
             "BlockType" : "text",
             "HorizontalAlignment" : "Center",
             "MarginTop" : 20,
+            "VerticalAlignment": "Center",
+            "Height" : 83,
             "Source" : "Driver Standing",
             "TextOptions" : {
                 "HorizontalAlignment" : "Center",
@@ -21,7 +23,7 @@
             "BlockType" : "image",
             "MarginTop" : 30,
             "HorizontalAlignment" : "Center",
-            "Source" : "images/Standing/driver_cup.png"
+            "Source" : "Standing/driver_cup.png"
         },
         {
             "BlockType" : "text",
@@ -40,7 +42,7 @@
             "ItemStackOptions" : {
                 "ItemSource" : "{Standings.Drivers}",
                 "Limit" : 1,
-                "Template" : {
+                "ItemTemplate" : {
                     "BlockType" : "text",
                     "Source" : "{Item.Driver.Name}",
                     "FontSize" : 90,
@@ -69,6 +71,8 @@
                             "BlockType" : "text",
                             "Source" : "Round ",
                             "FontSize" : 50,
+                            "Height" : 58,
+                            "VerticalAlignment": "Center",
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -78,6 +82,9 @@
                             "BlockType" : "text",
                             "Source" : " {Season.SeasonCurrentNumberEvent} [of] {Season.SeasonOverallNumberEvents}",
                             "FontSize" : 50,
+                            "Height" : 58,
+                            "PaddingRight" : 3,
+                            "VerticalAlignment": "Center",
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -94,6 +101,8 @@
                             "BlockType" : "text",
                             "Source" : "Season progress",
                             "FontSize" : 50,
+                            "Height" : 58,
+                            "VerticalAlignment": "Center",
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -103,6 +112,9 @@
                             "BlockType" : "text",
                             "Source" : " {Season.SeasonProgressPercent}%",
                             "FontSize" : 50,
+                            "Height" : 58,
+                            "PaddingRight" : 3,
+                            "VerticalAlignment": "Center",
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -149,7 +161,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{CountP1}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -166,6 +178,7 @@
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name} - {Item.CountP1}",
                                             "FontSize" : "{MostOfFontSize}",
+                                            "PaddingRight" : 3,
                                             "TextOptions" : {
                                                 "Foreground" : "{ForeWhite}",
                                                 "FontName" : "{TW-Boi}"
@@ -204,7 +217,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{CountQualP1}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -221,6 +234,7 @@
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name} - {Item.CountQualP1}",
                                             "FontSize" : "{MostOfFontSize}",
+                                            "PaddingRight" : 3,
                                             "TextOptions" : {
                                                 "Foreground" : "{ForeWhite}",
                                                 "FontName" : "{TW-Boi}"
@@ -259,7 +273,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{RaceFastestLapCount}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -276,6 +290,7 @@
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name} - {Item.RaceFastestLapCount}",
                                             "FontSize" : "{MostOfFontSize}",
+                                            "PaddingRight" : 3,
                                             "TextOptions" : {
                                                 "Foreground" : "{ForeWhite}",
                                                 "FontName" : "{TW-Boi}"
@@ -314,7 +329,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{RaceDriverDayCount}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -331,6 +346,7 @@
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name} - {Item.RaceDriverDayCount}",
                                             "FontSize" : "{MostOfFontSize}",
+                                            "PaddingRight" : 3,
                                             "TextOptions" : {
                                                 "Foreground" : "{ForeWhite}",
                                                 "FontName" : "{TW-Boi}"
@@ -369,7 +385,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{PenaltyPoints}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -386,6 +402,7 @@
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name} - {Item.PenaltyPoints}",
                                             "FontSize" : "{MostOfFontSize}",
+                                            "PaddingRight" : 3,
                                             "TextOptions" : {
                                                 "Foreground" : "{ForeWhite}",
                                                 "FontName" : "{TW-Boi}"
@@ -424,7 +441,7 @@
                             "BlockType" : "table",
                             "TableOptions" : {
                                 "ItemsSource" : "{Standings.Drivers}",
-                                "Limit" : "1",
+                                "Limit" : 1,
                                 "OrderByDescending" : "{CountDnf}",
                                 "HeaderTemplate" : {
                                     "BlockType" : "text",
@@ -441,6 +458,7 @@
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name} - {Item.CountDnf}",
                                             "FontSize" : "{MostOfFontSize}",
+                                            "PaddingRight" : 3,
                                             "TextOptions" : {
                                                 "Foreground" : "{ForeWhite}",
                                                 "FontName" : "{TW-Boi}"

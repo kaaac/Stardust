@@ -1,4 +1,5 @@
 {
+    "ComponentName" : "fastest_sector1",
     "BlockType" : "itemstack",
     "ItemStackOptions" : {
         "ItemSource" : "{Session.Drivers}",
@@ -6,7 +7,7 @@
         "OrderBy" : "{Item.IsOverallFastestSector1}",
         "FilterMember" : "{Item.IsOverallFastestSector1}",
         "FilterMemberValue" : "true",
-        "Template" : 
+        "ItemTemplate" : 
         {
             "BlockType" : "text",
             "Source" : "{Item.Driver.Name}, {Item.IsOverallFastestSector1}, {Item.FastestLapSector1}"

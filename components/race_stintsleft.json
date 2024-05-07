@@ -1,4 +1,5 @@
 {
+    "ComponentName": "race_stintsleft",
     "BlockType" : "stack",
     "Items" : [
         {
@@ -15,7 +16,7 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/BgForRace/bg_start.png",
+                    "BackgroundImage" : "BgForRace/bg_start.png",
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColor}",
@@ -33,14 +34,14 @@
                             "BlockType" : "stack",
                             "Width" : 15,
                             "Height" : 70,
-                            "BackgroundImage" : "images/BgForRace/bg_start_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_start_effect.png",
                             "Items" : [
                                 {
                                     "BlockType" : "shape",
                                     "Width" : 15,
                                     "Height" : 70,
                                     "ShapeOptions" : {
-                                        "ShapeType" : "Rectangle",
+                                        "ShapeType" : "rectangle",
                                         "Fill" : "#00000000"
                                     }
                                 }
@@ -52,7 +53,7 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/BgForRace/bg_start.png",
+                    "BackgroundImage" : "BgForRace/bg_start.png",
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColorOdd}",
@@ -70,13 +71,14 @@
                             "BlockType" : "stack",
                             "Width" : 15,
                             "Height" : 70,
-                            "BackgroundImage" : "images/BgForRace/bg_start_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_start_effect.png",
                             "Items" : [
                                 {
                                     "BlockType" : "text",
                                     "Width" : 15,
                                     "Height" : 70,
                                     "Source" : "g",
+                                    "FontName": "{TW-Re}",
                                     "Foreground" : "#00000000"
                                 }
                             ]
@@ -99,7 +101,7 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/BgForRace/bg_start_alt.png",
+                    "BackgroundImage" : "BgForRace/bg_start_alt.png",
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColor}",
@@ -117,14 +119,14 @@
                             "BlockType" : "stack",
                             "Width" : 15,
                             "Height" : 70,
-                            "BackgroundImage" : "images/BgForRace/bg_start_effect_alt.png",
+                            "BackgroundImage" : "BgForRace/bg_start_effect_alt.png",
                             "Items" : [
                                 {
                                     "BlockType" : "shape",
                                     "Width" : 15,
                                     "Height" : 70,
                                     "ShapeOptions" : {
-                                        "ShapeType" : "Rectangle",
+                                        "ShapeType" : "rectangle",
                                         "Fill" : "#00000000"
                                     }
                                 }
@@ -136,7 +138,7 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/BgForRace/bg_start_alt.png",
+                    "BackgroundImage" : "BgForRace/bg_start_alt.png",
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{RightPartEffectColorOdd}",
@@ -154,12 +156,13 @@
                             "BlockType" : "stack",
                             "Width" : 15,
                             "Height" : 70,
-                            "BackgroundImage" : "images/BgForRace/bg_start_effect_alt.png",
+                            "BackgroundImage" : "BgForRace/bg_start_effect_alt.png",
                             "Items" : [
                                 {
                                     "BlockType" : "text",
                                     "Width" : 15,
                                     "Height" : 70,
+                                    "FontName" : "{TW-Re}",
                                     "Source" : "g",
                                     "Foreground" : "#00000000"
                                 }

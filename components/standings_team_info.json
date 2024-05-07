@@ -1,8 +1,9 @@
 {
+    "ComponentName": "standings_team_info",
     "BlockType" : "stack",
     "Height" : 1018,
     "Width" : 958,
-    "BackgroundImage" : "images/Standing/bg_info_team.png",
+    "BackgroundImage" : "Standing/bg_info_team.png",
     "Orientation" : "Vertical",
     "Items" : [
         {
@@ -23,7 +24,7 @@
             "BlockType" : "image",
             "MarginTop" : 30,
             "HorizontalAlignment" : "Center",
-            "Source" : "images/Standing/team_cup.png"
+            "Source" : "Standing/team_cup.png"
         },
         {
             "BlockType" : "dock",
@@ -46,10 +47,11 @@
                 {
                     "BlockType":"itemstack",
                     "HorizontalAlignment" : "Right",
+                    "MarginRight" : 15,
                     "ItemStackOptions" : {
                         "ItemSource" : "{Standings.Teams}",
                         "Limit" : 1,
-                        "Template" : {
+                        "ItemTemplate" : {
                             "BlockType" : "text",
                             "Source" : "{Item.Team.Name}",
                             "FontSize" : 40,
@@ -71,12 +73,12 @@
             "ItemStackOptions" : {
                 "ItemSource" : "{Standings.Teams}",
                 "Limit" : 1,
-                "Template" : {
+                "ItemTemplate" : {
                     "BlockType" : "stack",
                     "Orientation" : "Vertical",
                     "Width" : 854,
                     "Height" : 126,
-                    "BackgroundImage" : "images/Standing/bg_team_leader.png",
+                    "BackgroundImage" : "Standing/bg_team_leader.png",
                     "ColorizeBackground": {
                         "Enabled" : true,
                         "Color": "{Item.Team.Color}",
@@ -86,7 +88,7 @@
                         {
                             "BlockType" : "text",
                             "Foreground" : "#ffffff",
-                            "MarginTop" : 8,
+                            "MarginTop" : 15,
                             "HorizontalAlignment" : "Center",
                             "Source" : "{Item.Driver0.Driver.Name}",
                             "TextOptions" : {
@@ -126,6 +128,9 @@
                             "BlockType" : "text",
                             "Source" : "Round ",
                             "FontSize" : 40,
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
+                            "MarginLeft" : 15,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -135,6 +140,8 @@
                             "BlockType" : "text",
                             "Source" : " {Season.SeasonCurrentNumberEvent} [of] {Season.SeasonOverallNumberEvents}",
                             "FontSize" : 40,
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -151,6 +158,8 @@
                             "BlockType" : "text",
                             "Source" : "Season progress",
                             "FontSize" : 40,
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -160,6 +169,10 @@
                             "BlockType" : "text",
                             "Source" : " {Season.SeasonProgressPercent}%",
                             "FontSize" : 40,
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
+                            "MarginRight" : 15,
+                            "PaddingRight" : 3,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"

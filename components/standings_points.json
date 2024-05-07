@@ -1,4 +1,5 @@
 {
+    "ComponentName": "standings_points",
     "BlockType" : "stack",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",
@@ -8,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/Standing/bg_pts.png",
+            "BackgroundImage" : "Standing/bg_pts.png",
             "Height" : 70,
             "Width" : 112,
             "ColorizeBackground": {
@@ -26,7 +27,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_pts_second_color.png",
+                    "BackgroundImage" : "Standing/bg_pts_second_color.png",
                     "Height" : 70,
                     "Width" : 112,
                     "ColorizeBackground": {
@@ -37,7 +38,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/Standing/bg_pts_effect.png",
+                            "BackgroundImage" : "Standing/bg_pts_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",
@@ -67,7 +68,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/Standing/bg_pts.png",
+            "BackgroundImage" : "Standing/bg_pts.png",
             "Height" : 70,
             "Width" : 112,
             "ColorizeBackground": {
@@ -85,7 +86,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_pts_second_color.png",
+                    "BackgroundImage" : "Standing/bg_pts_second_color.png",
                     "Height" : 70,
                     "Width" : 112,
                     "ColorizeBackground": {
@@ -96,7 +97,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/Standing/bg_pts_effect.png",
+                            "BackgroundImage" : "Standing/bg_pts_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",

@@ -1,6 +1,7 @@
 {
+    "ComponentName": "session_middle_position_effect",
     "BlockType" : "stack",
-    "BackgroundImage" : "images/BgForRace/bg_position_effect.png",
+    "BackgroundImage" : "BgForRace/bg_position_effect.png",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",
     "VerticalAlginment":"Center",

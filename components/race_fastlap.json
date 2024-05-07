@@ -1,4 +1,5 @@
 {
+    "ComponentName": "race_fastlap",
     "BlockType" : "stack",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",
@@ -8,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_fastlap.png",
+            "BackgroundImage" : "BgForRace/bg_fastlap.png",
             "Height" : 70,
             "Width" : 300,
             
@@ -27,7 +28,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_fastlap_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_fastlap_effect.png",
                     "Orientation" : "Horizontal",
                     "RenderIf" : "{Item.IsRaceFastestLap, Converter=BoolReverse}",
                     "HorizontalAlignment" : "Center",
@@ -54,14 +55,14 @@
                 },
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_purple.png",
+                    "BackgroundImage" : "BgForRace/bg_purple.png",
                     "Height" : 70,
                     "Width" : 300,
                     "RenderIf" : "{Item.IsRaceFastestLap}",
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForRace/bg_fastlap_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_fastlap_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",
@@ -91,7 +92,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_fastlap.png",
+            "BackgroundImage" : "BgForRace/bg_fastlap.png",
             "Height" : 70,
             "Width" : 300,
             
@@ -110,7 +111,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_fastlap_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_fastlap_effect.png",
                     "Orientation" : "Horizontal",
                     "RenderIf" : "{Item.IsRaceFastestLap, Converter=BoolReverse}",
                     "HorizontalAlignment" : "Center",
@@ -137,14 +138,14 @@
                 },
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_purple.png",
+                    "BackgroundImage" : "BgForRace/bg_purple.png",
                     "Height" : 70,
                     "Width" : 300,
                     "RenderIf" : "{Item.IsRaceFastestLap}",
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForRace/bg_fastlap_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_fastlap_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",

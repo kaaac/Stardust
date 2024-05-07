@@ -1,4 +1,5 @@
 {
+    "ComponentName" : "position_jump",
     "BlockType" : "stack",
     "MarginLeft" : 10,
     "Width" : 126,
@@ -13,7 +14,7 @@
                 {
                     "BlockType" : "image",
                     "RenderIf" : "{Item.PositionJump, Converter=NumberGreater, Parameter=0}",
-                    "Source" : "images/arrow_up.png",
+                    "Source" : "arrow_up.png",
                     "HorizontalAlignment": "Center",
                     "VerticalAlignment" : "Center",
                     "Height" : 22                                                                
@@ -21,7 +22,7 @@
                 {
                     "BlockType" : "image",
                     "RenderIf" : "{Item.PositionJump, Converter=NumberLess, Parameter=0}",
-                    "Source" : "images/arrow_down.png",
+                    "Source" : "arrow_down.png",
                     "HorizontalAlignment": "Center",
                     "VerticalAlignment" : "Center",
                     "Height" : 22                                                              

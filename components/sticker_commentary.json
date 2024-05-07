@@ -1,27 +1,30 @@
 {
+    "ComponentName": "sticker_commentary",
     "BlockType" : "stack",
     "Width" : 718,
     "Height" : 127,
-    "BackgroundImage" : "images/bg_commentator.png",
+    "BackgroundImage" : "bg_commentator.png",
     "HorizontalAlignment" : "Center",
     "Orientation" : "Horizontal",
     "Items" : [
         {
             "BlockType" : "dock",
             "HorizontalAlignment" : "Center",
+            "VerticalAlignment": "Center",
             "Orientation" : "Horizontal",
             "Items" : [
                 {
                     "BlockType" : "stack",
                     "HorizontalAlignment" : "Center",
                     "Orientation" : "Vertical",
-                    "MarginTop" : 10,
                     "Items" : [
                         {
                             "BlockType" : "text",
                             "Source" : "Streamer and Commentary:",
                             "Foreground" : "#ffffff",
                             "FontSize" : 35,
+                            "VerticalAlignment": "Center",
+                            "Height": 41,
                             "HorizontalAlignment" : "Center",
                             "FontName" : "{TW-Bo}"
                         },
@@ -30,6 +33,9 @@
                             "Source" : " <content>",
                             "Foreground" : "#ffffff",
                             "FontSize" : 35,
+                            "VerticalAlignment": "Center",
+                            "Height": 41,
+                            "PaddingRight" : 3,
                             "HorizontalAlignment" : "Center",
                             "FontName" : "{TW-Boi}"
                         }

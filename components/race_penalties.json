@@ -1,4 +1,5 @@
 {
+    "ComponentName": "race_penalties",
     "BlockType" : "stack",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",
@@ -8,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_penalties.png",
+            "BackgroundImage" : "BgForRace/bg_penalties.png",
             "Height" : 70,
             "Width" : 248,
             "ColorizeBackground": {
@@ -26,7 +27,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_penalties_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_penalties_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -61,7 +62,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_penalties.png",
+            "BackgroundImage" : "BgForRace/bg_penalties.png",
             "Height" : 70,
             "Width" : 248,
             "ColorizeBackground": {
@@ -79,7 +80,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_penalties_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_penalties_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",

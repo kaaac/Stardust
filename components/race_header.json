@@ -1,10 +1,11 @@
 {
+    "ComponentName": "race_header",
     "BlockType" : "dock",
     "Orientation" : "Horizontal",
     "Items" : [
         {
             "BlockType" : "stack",
-            "HorizontalAlignment" : "left",
+            "HorizontalAlignment" : "Left",
             "MarginLeft" : 80,
             "MarginTop" : 30,
             "Items" : [
@@ -13,6 +14,8 @@
                     "Source" : "{Season.MainLeagueCategory.Name} - ",
                     "FontName" : "{TW-Bo}",
                     "Foreground" : "#ffffff",
+                    "VerticalAlignment": "Center",
+                    "Height" : 110,
                     "FontSize" : 90,
                     "Triggers" : [
                         {
@@ -27,7 +30,10 @@
                     "Source" : "{Season.LeagueInfo.LeagueFullName}",
                     "FontName" : "{TW-Boi}",
                     "Foreground" : "#ffffff",
-                    "FontSize" : 90
+                    "VerticalAlignment": "Center",
+                    "Height" : 110,
+                    "FontSize" : 90,
+                    "PaddingRight" : 10
                 }
             ]
         },
@@ -41,8 +47,6 @@
                 {
                     "BlockType" : "image",
                     "Source" : "{Season.LeagueInfo.LeagueLogo}",
-                    "FontName" : "{TW-Boi}",
-                    "Foreground" : "#ffffff",
                     "Height" : 90,
                     "MarginTop" : 30
                 }

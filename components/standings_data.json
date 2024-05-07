@@ -1,4 +1,5 @@
 {
+    "ComponentName": "standings_data",
     "BlockType" : "stack",
     "Items" : [
         {
@@ -11,7 +12,7 @@
             "Items": [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_data.png",
+                    "BackgroundImage" : "Standing/bg_data.png",
                     "Height" : 70,
                     "Width" : "<width>",
                     "ColorizeBackground": {
@@ -22,7 +23,7 @@
                         "Items" : [
                             {
                                 "BlockType" : "stack",
-                                "BackgroundImage" : "images/Standing/bg_data_effect.png",
+                                "BackgroundImage" : "Standing/bg_data_effect.png",
                                 "Orientation" : "Horizontal",
                                 "HorizontalAlignment" : "Center",
                                 "VerticalAlginment":"Center",
@@ -68,7 +69,7 @@
             "Items": [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_data.png",
+                    "BackgroundImage" : "Standing/bg_data.png",
                     "Height" : 70,
                     "Width" : "<width>",
                     "ColorizeBackground": {
@@ -79,7 +80,7 @@
                         "Items" : [
                             {
                                 "BlockType" : "stack",
-                                "BackgroundImage" : "images/Standing/bg_data_effect.png",
+                                "BackgroundImage" : "Standing/bg_data_effect.png",
                                 "Orientation" : "Horizontal",
                                 "HorizontalAlignment" : "Center",
                                 "VerticalAlginment":"Center",

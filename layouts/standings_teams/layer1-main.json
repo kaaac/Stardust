@@ -2,12 +2,12 @@
     "BlockRoot" : {
         "BlockType" : "stack",
         "Orientation" : "Vertical",
-        "BackgroundImage" : "images/Background/bg.png",
+        "BackgroundImage" : "Background/bg.png",
         "Items" : [
             {
                 "BlockType" : "stack",
                 "Orientation" : "Vertical",
-                "BackgroundImage" : "images/Background/bg_category.png",
+                "BackgroundImage" : "Background/bg_category.png",
                 "ColorizeBackground": {
                     "Enabled" : true,
                     "Color": "{Season.MainLeagueCategory.Color}",
@@ -17,7 +17,7 @@
                     {
                         "BlockType" : "stack",
                         "Orientation" : "Vertical",
-                        "BackgroundImage" : "images/Background/bg_effect.png",
+                        "BackgroundImage" : "Background/bg_effect.png",
                         "ColorizeBackground": {
                             "Enabled" : false,
                             "Color": "{Season.MainLeagueCategory.Color}",
@@ -26,9 +26,7 @@
                         "Items" : [
                             {
                                 "BlockType" : "component",
-                                "ComponentOptions" : {
-                                    "ComponentName" : "race_header"
-                                }
+                                "Component" : "race_header"
                             },
                             {
                                 "BlockType" : "stack",
@@ -46,21 +44,7 @@
                                             {
                                                 "BlockType" : "component",
                                                 "MarginBottom" : 50,
-                                                "ComponentOptions" : {
-                                                    "ComponentName" : "quali_info"
-                                                }
-                                            },
-                                            {
-                                                "BlockType" : "component",
-                                                "HorizontalAlignment" : "Center",
-                                                "RenderIf" : "{StreamerAndCommentary, Converter=EmptyObjectToFalse}",
-                                                "MarginBottom" : 15,
-                                                "ComponentOptions" : {
-                                                    "ComponentName" : "sticker_commentary",
-                                                    "Vars" : {
-                                                        "content" : "{StreamerAndCommentary}"
-                                                    }
-                                                }
+                                                "Component" : "standings_team_info"
                                             }
                                         ]
                                     },
@@ -70,8 +54,8 @@
                                         "MarginRight" : 75,
                                         "MarginLeft" : 75,
                                         "TableOptions" : {
-                                            "ItemsSource" : "{Session.Drivers}",
-                                            "RowSpacing" : 15,
+                                            "ItemsSource" : "{Standings.Teams}",
+                                            "RowSpacing" : "{TeamStandingsRowSpacing}",
                                             "HeaderTemplate" : {
                                                 "BlockType" : "text",
                                                 "FontName" : "{TW-Li}",
@@ -86,48 +70,34 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_position"
+                                                        "Component": "session_middle_position"
                                                     }
                                                 },
                                                 {
-                                                    "Header" : "",
-                                                    "Name" : "driver",
-                                                    "Template" : 
-                                                    {
-                                                        "BlockType" : "component",
-                                                        "ComponentName": "session_middle_driver",
-                                                        "ComponentOptions" : {
-                                                            "Vars" : {
-                                                                "data": "{Item.Driver.RaceNumber}"
-                                                            }
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "Header" : "Driver",
-                                                    "Name" : "drivername",
-                                                    "Template" : 
-                                                    {
-                                                        "BlockType" : "component",
-                                                        "ComponentName": "session_middle_drivername"
-                                                    }
-                                                },
-                                                {
-                                                    "Header" : "Team/Car",
+                                                    "Header" : "Team",
                                                     "Name" : "team",
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_team"
+                                                        "Component": "standings_middle_team"
                                                     }
                                                 },
                                                 {
-                                                    "Header" : "Time",
-                                                    "Name" : "Time",
+                                                    "Header" : "",
+                                                    "Name" : "team",
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_gap"
+                                                        "Component": "standings_middle_car"
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "Pts",
+                                                    "Name" : "Points",
+                                                    "Template" : 
+                                                    {
+                                                        "BlockType" : "component",
+                                                        "Component": "standings_points"
                                                     }
                                                 },
                                                 {
@@ -136,99 +106,113 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "position_jump"
-                                                    }
-                                                },
-                                                {
-                                                    "Header" : "Sector 1",
-                                                    "Name" : "Sector",
-                                                    "Template" : 
-                                                    {
-                                                        "BlockType" : "component",
-                                                        "ComponentName": "quali_sector",
-                                                        "ComponentOptions" : {
-                                                            "Vars" : {
-                                                                "number" : "1"
-                                                            }
-                                                        },
-                                                        "Triggers" : [
-                                                            {
-                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
-                                                                "Property" : "RenderIf",
-                                                                "Value" : "false"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "Header" : "Sector 2",
-                                                    "Name" : "Sector",
-                                                    "Template" : 
-                                                    {
-                                                        "BlockType" : "component",
-                                                        "ComponentName": "quali_sector",
-                                                        "ComponentOptions" : {
-                                                            "Vars" : {
-                                                                "number" : "2"
-                                                            }
-                                                        },
-                                                        "Triggers" : [
-                                                            {
-                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
-                                                                "Property" : "RenderIf",
-                                                                "Value" : "false"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "Header" : "Sector 3",
-                                                    "Name" : "Sector",
-                                                    "Template" : 
-                                                    {
-                                                        "BlockType" : "component",
-                                                        "ComponentName": "quali_sector",
-                                                        "ComponentOptions" : {
-                                                            "Vars" : {
-                                                                "number" : "3"
-                                                            }
-                                                        },
-                                                        "Triggers" : [
-                                                            {
-                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
-                                                                "Property" : "RenderIf",
-                                                                "Value" : "false"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "Header" : "Stints",
-                                                    "Name" : "Stints",
-                                                    "Template" : 
-                                                    {
-                                                        "BlockType" : "component",
-                                                        "ComponentName": "session_stints",
-                                                        "ComponentOptions" : {
-                                                            "Vars" : {
-                                                                "type" : "BgForQuali"
-                                                            }
-                                                        },
-                                                        "Triggers" : [
-                                                            {
-                                                                "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
-                                                                "Property" : "RenderIf",
-                                                                "Value" : "false"
-                                                            }
-                                                        ]
+                                                        "Component": "position_jump"
                                                     }
                                                 },
                                                 {
                                                     "Header" : "",
-                                                    "Name" : "quali-finish",
+                                                    "Name" : "Standings-start",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "quali_data_finish"
+                                                        "Component" : "standings_data_start"
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "Wins",
+                                                    "Name" : "Data",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data",
+                                                        "ComponentOptions" : {
+                                                            "Vars" : {
+                                                                "data" : "{Item.CountP1}",
+                                                                "fore" : "#D2B200",
+                                                                "width" : "71"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "2nd",
+                                                    "Name" : "Data",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data",
+                                                        "ComponentOptions" : {
+                                                            "Vars" : {
+                                                                "data" : "{Item.CountP2}",
+                                                                "fore" : "#000000",
+                                                                "width" : "71"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "3rd",
+                                                    "Name" : "Data",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data",
+                                                        "ComponentOptions" : {
+                                                            "Vars" : {
+                                                                "data" : "{Item.CountP3}",
+                                                                "fore" : "#000000",
+                                                                "width" : "71"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "FL",
+                                                    "Name" : "Data",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data",
+                                                        "ComponentOptions" : {
+                                                            "Vars" : {
+                                                                "data" : "{Item.RaceFastestLapCount}",
+                                                                "fore" : "#DB2AC6",
+                                                                "width" : "71"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "Pole",
+                                                    "Name" : "Data",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data",
+                                                        "ComponentOptions" : {
+                                                            "Vars" : {
+                                                                "data" : "{Item.CountQualP1}",
+                                                                "fore" : "#9F2AC6",
+                                                                "width" : "71"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "Event",
+                                                    "Name" : "Data",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data",
+                                                        "ComponentOptions" : {
+                                                            "Vars" : {
+                                                                "data" : "{Item.EventsCount}",
+                                                                "fore" : "#000000",
+                                                                "width" : "85"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "Header" : "",
+                                                    "Name" : "Standings-finish",
+                                                    "Template" : {
+                                                        "BlockType" : "component",
+                                                        "Component" : "standings_data_finish"
                                                     }
                                                 }
                                             ]

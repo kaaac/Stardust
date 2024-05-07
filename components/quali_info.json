@@ -1,8 +1,9 @@
 {
+    "ComponentName": "quali_info",
     "BlockType" : "stack",
     "Height" : 1512,
     "Width" : 958,
-    "BackgroundImage" : "images/BgForQuali/bg_info_quali.png",
+    "BackgroundImage" : "BgForQuali/bg_info_quali.png",
     "Orientation" : "Vertical",
     "Items" : [
         {
@@ -23,10 +24,10 @@
             "BlockType" : "image",
             "MarginTop" : 50,
             "Height" : 650,
-            "Source" : "images/CircuitLayout/alltrack/track_{Session.Track.CircuitName}.png",
+            "Source" : "CircuitLayout/alltrack/track_{Session.Track.CircuitName}.png",
             "HorizontalAlignment" : "Center",
             "ImageOptions" : {
-                "DefaultPath" : "images/CircuitLayout/alltrack/track_Monza.png"
+                "DefaultPath" : "CircuitLayout/alltrack/track_Monza.png"
             }
         },
         {
@@ -43,8 +44,10 @@
                     "Items" : [
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : "{Session.Track.CircuitName} - [{Session.SessionType}Q]",
                             "FontSize" : 40,
+                            "Height" : 60,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -52,8 +55,10 @@
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " - {Session.SessionDurationMinutes} min",
                             "FontSize" : 40,
+                            "Height" : 60,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -75,13 +80,16 @@
                     "Items" : [
                         {
                             "BlockType" : "image",
-                            "Source" : "images/Weather/weather_{Session.WeatherType}.png",
+                            "VerticalAlignment": "Center",
+                            "Source" : "Weather/weather_{Session.WeatherType}.png",
                             "Height" : 60
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " Air:",
                             "FontSize" : 40,
+                            "Height" : 60,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -89,8 +97,10 @@
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " {Session.AirTemperatureString}",
                             "FontSize" : 40,
+                            "Height" : 60,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -118,8 +128,10 @@
                             "Items" : [
                                 {
                                     "BlockType" : "text",
+                                    "VerticalAlignment": "Center",
                                     "Source" : "Lap record -",
                                     "FontSize" : 40,
+                                    "Height" : 60,
                                     "TextOptions" : {
                                         "Foreground" : "{ForeWhite}",
                                         "FontName" : "{TW-Bo}"
@@ -127,8 +139,11 @@
                                 },
                                 {
                                     "BlockType" : "text",
+                                    "VerticalAlignment": "Center",
                                     "Source" : " {Session.Track.RaceLapRecordTime}",
                                     "FontSize" : 40,
+                                    "Height" : 60,
+                                    "PaddingRight" : 3,
                                     "TextOptions" : {
                                         "Foreground" : "{ForeWhite}",
                                         "FontName" : "{TW-Boi}"
@@ -152,13 +167,16 @@
                     "Items" : [
                         {
                             "BlockType" : "image",
-                            "Source" : "images/Weather/temperature.png",
+                            "VerticalAlignment": "Center",
+                            "Source" : "Weather/temperature.png",
                             "Height" : 60
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " Track:",
                             "FontSize" : 40,
+                            "Height" : 60,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Bo}"
@@ -166,8 +184,10 @@
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " {Session.TrackTemperature}°",
                             "FontSize" : 40,
+                            "Height" : 60,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -202,6 +222,7 @@
                             "BlockType" : "text",
                             "Source" : " {Session.FastestOverallSector1}",
                             "FontSize" : 40,
+                            "PaddingRight" : 3,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -243,6 +264,7 @@
                             "BlockType" : "text",
                             "Source" : " {Session.FastestOverallSector2}",
                             "FontSize" : 40,
+                            "PaddingRight" : 3,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"
@@ -284,6 +306,7 @@
                             "BlockType" : "text",
                             "Source" : " {Session.FastestOverallSector3}",
                             "FontSize" : 40,
+                            "PaddingRight" : 3,
                             "TextOptions" : {
                                 "Foreground" : "{ForeWhite}",
                                 "FontName" : "{TW-Boi}"

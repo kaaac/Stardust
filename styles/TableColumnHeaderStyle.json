@@ -1,0 +1,9 @@
+{
+  "StyleName": "TableColumnHeaderStyle",
+  "FontName" : "{TW-Li}",
+  "FontSize" : 35,
+  "Foreground" : "#ffffff",
+  "HorizontalAlignment" : "Center",
+  "VerticalAlignment" : "Center",
+  "Height" : 42
+}

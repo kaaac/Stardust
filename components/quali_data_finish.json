@@ -1,11 +1,12 @@
 {
+    "ComponentName": "quali_data_finish",
     "BlockType" : "stack",
     "Items" : [
         {
             "BlockType" : "stack",
             "Width" : 15,
             "Height" : 70,
-            "BackgroundImage" : "images/Standing/bg_finish.png",
+            "BackgroundImage" : "Standing/bg_finish.png",
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{RightPartEffectColor}",
@@ -16,14 +17,14 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/Standing/bg_finish_effect.png",
+                    "BackgroundImage" : "Standing/bg_finish_effect.png",
                     "Items" : [
                         {
                             "BlockType" : "shape",
                             "Width" : 15,
                             "Height" : 70,
                             "ShapeOptions" : {
-                                "ShapeType" : "Rectangle",
+                                "ShapeType" : "rectangle",
                                 "Fill" : "#00000000"
                             }
                         }
@@ -42,7 +43,7 @@
             "BlockType" : "stack",
             "Width" : 15,
             "Height" : 70,
-            "BackgroundImage" : "images/Standing/bg_finish.png",
+            "BackgroundImage" : "Standing/bg_finish.png",
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{RightPartEffectColorOdd}",
@@ -53,14 +54,14 @@
                     "BlockType" : "stack",
                     "Width" : 15,
                     "Height" : 70,
-                    "BackgroundImage" : "images/Standing/bg_finish_effect.png",
+                    "BackgroundImage" : "Standing/bg_finish_effect.png",
                     "Items" : [
                         {
                             "BlockType" : "shape",
                             "Width" : 15,
                             "Height" : 70,
                             "ShapeOptions" : {
-                                "ShapeType" : "Rectangle",
+                                "ShapeType" : "rectangle",
                                 "Fill" : "#00000000"
                             }
                         }

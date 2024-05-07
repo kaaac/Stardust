@@ -1,4 +1,5 @@
 {
+    "ComponentName" : "driver_flag",
     "BlockType" : "stack",
     "Orientation" : "Vertical",
     "Items" : [

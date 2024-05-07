@@ -1,4 +1,5 @@
 {
+    "ComponentName": "session_middle_position",
     "BlockType" : "stack",
     "Orientation" : "Horizontal",
     "HorizontalAlignment" : "Center",
@@ -9,7 +10,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberEquals, Parameter=1}",
             "Height" : 70,
             "Width" : 70,
@@ -20,14 +21,14 @@
             },
             "Items" : [
                 {
-                    "BlockType" : "Component",
-                    "ComponentName" : "session_middle_position_effect"
+                    "BlockType" : "component",
+                    "Component" : "session_middle_position_effect"
                 }
             ]
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberEquals, Parameter=2}",
             "Height" : 70,
             "Width" : 70,
@@ -38,14 +39,14 @@
             },
             "Items" : [
                 {
-                    "BlockType" : "Component",
-                    "ComponentName" : "session_middle_position_effect"
+                    "BlockType" : "component",
+                    "Component" : "session_middle_position_effect"
                 }
             ]
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberEquals, Parameter=3}",
             "Height" : 70,
             "Width" : 70,
@@ -56,14 +57,14 @@
             },
             "Items" : [
                 {
-                    "BlockType" : "Component",
-                    "ComponentName" : "session_middle_position_effect"
+                    "BlockType" : "component",
+                    "Component" : "session_middle_position_effect"
                 }
             ]
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberGreater, Parameter=3}",
             "Height" : 70,
             "Width" : 70,
@@ -74,8 +75,8 @@
             },
             "Items" : [
                 {
-                    "BlockType" : "Component",
-                    "ComponentName" : "session_middle_position_effect"
+                    "BlockType" : "component",
+                    "Component" : "session_middle_position_effect"
                 }
             ]
         }
