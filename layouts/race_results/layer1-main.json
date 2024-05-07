@@ -2,12 +2,12 @@
     "BlockRoot" : {
         "BlockType" : "stack",
         "Orientation" : "Vertical",
-        "BackgroundImage" : "images/Background/bg.png",
+        "BackgroundImage" : "Background/bg.png",
         "Items" : [
             {
                 "BlockType" : "stack",
                 "Orientation" : "Vertical",
-                "BackgroundImage" : "images/Background/bg_category.png","ColorizeBackground": {
+                "BackgroundImage" : "Background/bg_category.png","ColorizeBackground": {
                     "Enabled" : true,
                     "Color": "{Season.MainLeagueCategory.Color}",
                     "BlendPercentage": 100
@@ -16,7 +16,7 @@
                     {
                         "BlockType" : "stack",
                         "Orientation" : "Vertical",
-                        "BackgroundImage" : "images/Background/bg_effect.png","ColorizeBackground": {
+                        "BackgroundImage" : "Background/bg_effect.png","ColorizeBackground": {
                             "Enabled" : false,
                             "Color": "{Season.MainLeagueCategory.Color}",
                             "BlendPercentage": 100
@@ -24,9 +24,7 @@
                         "Items" : [
                             {
                                 "BlockType" : "component",
-                                "ComponentOptions" : {
-                                    "ComponentName" : "race_header"
-                                }
+                                "Component" : "race_header"
                             },
                             {
                                 "BlockType" : "stack",
@@ -44,17 +42,15 @@
                                             {
                                                 "BlockType" : "component",
                                                 "MarginBottom" : 50,
-                                                "ComponentOptions" : {
-                                                    "ComponentName" : "race_info"
-                                                }
+                                                "Component" : "race_info"
                                             },
                                             {
                                                 "BlockType" : "component",
                                                 "HorizontalAlignment" : "Center",
                                                 "RenderIf" : "{Session.FastestLapDriver.Name, Converter=EmptyObjectToFalse}",
                                                 "MarginBottom" : 15,
+                                                "Component" : "sticker_FL_DD",
                                                 "ComponentOptions" : {
-                                                    "ComponentName" : "sticker_FL_DD",
                                                     "Vars" : {
                                                         "bg" : "fastlap",
                                                         "title" : "Fastest Lap",
@@ -67,8 +63,8 @@
                                                 "HorizontalAlignment" : "Center",
                                                 "RenderIf" : "{Session.DriverDayDriver.Name, Converter=EmptyObjectToFalse}",
                                                 "MarginBottom" : 15,
+                                                "Component" : "sticker_FL_DD",
                                                 "ComponentOptions" : {
-                                                    "ComponentName" : "sticker_FL_DD",
                                                     "Vars" : {
                                                         "bg" : "driveroftheday",
                                                         "title" : "Driver of the Day",
@@ -81,8 +77,8 @@
                                                 "HorizontalAlignment" : "Center",
                                                 "RenderIf" : "{StreamerAndCommentary, Converter=EmptyObjectToFalse}",
                                                 "MarginBottom" : 15,
+                                                "Component" : "sticker_commentary",
                                                 "ComponentOptions" : {
-                                                    "ComponentName" : "sticker_commentary",
                                                     "Vars" : {
                                                         "content" : "{StreamerAndCommentary}"
                                                     }
@@ -100,10 +96,7 @@
                                             "RowSpacing" : 15,
                                             "HeaderTemplate" : {
                                                 "BlockType" : "text",
-                                                "FontName" : "{TW-Li}",
-                                                "FontSize" : 35,
-                                                "Foreground" : "#ffffff",
-                                                "HorizontalAlignment" : "Center"
+                                                "Style" : "TableColumnHeaderStyle"
                                             },
                                             "Columns" : [
                                                 {
@@ -112,7 +105,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_position"
+                                                        "Component": "session_middle_position"
                                                     }
                                                 },
                                                 {
@@ -121,7 +114,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_driver",
+                                                        "Component": "session_middle_driver",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data": "{Item.Driver.RaceNumber}"
@@ -135,7 +128,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_drivername"
+                                                        "Component": "session_middle_drivername"
                                                     }
                                                 },
                                                 {
@@ -144,7 +137,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_team"
+                                                        "Component": "session_middle_team"
                                                     }
                                                 },
                                                 {
@@ -153,7 +146,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_gap"
+                                                        "Component": "session_middle_gap"
                                                     }
                                                 },
                                                 {
@@ -162,7 +155,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "position_jump"
+                                                        "Component": "position_jump"
                                                     }
                                                 },
                                                 {
@@ -170,7 +163,7 @@
                                                     "Name" : "stings-start",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "race_stintsleft"
+                                                        "Component" : "race_stintsleft"
                                                     }
                                                 },
                                                 {
@@ -179,7 +172,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_stints",
+                                                        "Component": "session_stints",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "type" : "BgForRace"
@@ -200,7 +193,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "race_fastlap"
+                                                        "Component": "race_fastlap"
                                                     },
                                                     "Triggers" : [
                                                         {
@@ -216,7 +209,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "race_penalties"
+                                                        "Component": "race_penalties"
                                                     }
                                                 },
                                                 {
@@ -225,7 +218,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "race_points"
+                                                        "Component": "race_points"
                                                     }
                                                 }
                                             ]

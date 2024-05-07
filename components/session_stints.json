@@ -6,7 +6,7 @@
             "BlockType" : "stack",
             "Orientation" : "Horizontal",
             "Height" : 70,
-            "BackgroundImage" : "images/<type>/bg_stints.png",
+            "BackgroundImage" : "<type>/bg_stints.png",
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{RightPartEffectColor}",
@@ -31,7 +31,7 @@
                     "HorizontalAlignment" : "Center",
                     "Orientation" : "Horizontal",
                     "Height" : 70,
-                    "BackgroundImage" : "images/<type>/bg_stints_effect.png",
+                    "BackgroundImage" : "<type>/bg_stints_effect.png",
                     "Triggers" : [
                         {
                             "Condition" : "{Session.SessionType, Converter=StringEquals,Parameter=Qualification}",
@@ -60,9 +60,9 @@
                                     "BlockType": "itemstack",
                                     "HorizontalAlignment" : "Center",
                                     "VerticalAlignment" : "Center",
+                                    "Spacing" : 4,
                                     "ItemStackOptions": {
                                         "ItemSource": "{Item.Stints}",
-                                        "ItemSpacing" : 4,
                                         "ItemTemplate": {
                                             "BlockType": "stack",
                                             "VerticalAlignment": "Bottom",
@@ -71,17 +71,16 @@
                                             "Items": [
                                                 {
                                                     "BlockType": "image",
-                                                    "Height": 40,
-                                                    "VerticalAlignment": "Bottom",
-                                                    "PaddingBottom" : -9,
-                                                    "Source": "images/tyres/tyres_{Item.Tyres}.png"
+                                                    "Height": 39,
+                                                    "VerticalAlignment": "Center",
+                                                    "PaddingBottom" : -1,
+                                                    "Source": "tyres/tyres_{Item.Tyres}.png"
                                                 },
                                                 {
                                                     "BlockType": "text",
                                                     "Source": "{Item.Laps}",
                                                     "HorizontalAlignment": "Center",
-                                                    "VerticalAlignment": "Bottom",
-                                                    "MarginBottom" : -8,
+                                                    "VerticalAlignment": "Center",
                                                     "FontSize": 30,
                                                     "TextOptions": {
                                                         "FontName": "{TW-Sb}",
@@ -104,7 +103,7 @@
             "BlockType" : "stack",
             "Orientation" : "Horizontal",
             "Height" : 70,
-            "BackgroundImage" : "images/<type>/bg_stints.png",
+            "BackgroundImage" : "<type>/bg_stints.png",
             "ColorizeBackground": {
                 "Enabled" : true,
                 "Color": "{RightPartEffectColorOdd}",
@@ -129,7 +128,7 @@
                     "HorizontalAlignment" : "Center",
                     "Orientation" : "Horizontal",
                     "Height" : 70,
-                    "BackgroundImage" : "images/<type>/bg_stints_effect.png",
+                    "BackgroundImage" : "<type>/bg_stints_effect.png",
                     "Triggers" : [
                         {
                             "Condition" : "{Session.SessionType, Converter=StringEquals,Parameter=Qualification}",
@@ -158,9 +157,9 @@
                                     "BlockType": "itemstack",
                                     "HorizontalAlignment" : "Center",
                                     "VerticalAlignment" : "Center",
+                                    "Spacing" : 4,
                                     "ItemStackOptions": {
                                         "ItemSource": "{Item.Stints}",
-                                        "ItemSpacing" : 4,
                                         "ItemTemplate": {
                                             "BlockType": "stack",
                                             "VerticalAlignment": "Bottom",
@@ -169,17 +168,16 @@
                                             "Items": [
                                                 {
                                                     "BlockType": "image",
-                                                    "Height": 40,
-                                                    "VerticalAlignment": "Bottom",
-                                                    "PaddingBottom" : -9,
-                                                    "Source": "images/tyres/tyres_{Item.Tyres}.png"
+                                                    "Height": 39,
+                                                    "VerticalAlignment": "Center",
+                                                    "PaddingBottom" : -1,
+                                                    "Source": "tyres/tyres_{Item.Tyres}.png"
                                                 },
                                                 {
                                                     "BlockType": "text",
                                                     "Source": "{Item.Laps}",
                                                     "HorizontalAlignment": "Center",
-                                                    "VerticalAlignment": "Bottom",
-                                                    "MarginBottom" : -8,
+                                                    "VerticalAlignment": "Center",
                                                     "FontSize": 30,
                                                     "TextOptions": {
                                                         "FontName": "{TW-Sb}",

@@ -9,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_drivername.png",
+            "BackgroundImage" : "BgForRace/bg_drivername.png",
             "Height" : 70,
             "Width" : 400,
             "ColorizeBackground": {
@@ -20,7 +20,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_drivername_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_drivername_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",

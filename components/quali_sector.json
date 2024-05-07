@@ -9,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForQuali/bg_sector_<number>.png",
+            "BackgroundImage" : "BgForQuali/bg_sector_<number>.png",
             "Height" : 70,
             "Width" : 190,
             "ColorizeBackground": {
@@ -27,7 +27,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForQuali/bg_sector_<number>_effect.png",
+                    "BackgroundImage" : "BgForQuali/bg_sector_<number>_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -54,14 +54,14 @@
                 },
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForQuali/bg_purple.png",
+                    "BackgroundImage" : "BgForQuali/bg_purple.png",
                     "Height" : 70,
                     "Width" : 190,
                     "RenderIf" : "{Item.IsOverallFastestSector<number>}",
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForQuali/bg_sector_<number>_effect.png",
+                            "BackgroundImage" : "BgForQuali/bg_sector_<number>_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",
@@ -91,7 +91,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForQuali/bg_sector_<number>.png",
+            "BackgroundImage" : "BgForQuali/bg_sector_<number>.png",
             "Height" : 70,
             "Width" : 190,
             "ColorizeBackground": {
@@ -109,7 +109,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForQuali/bg_sector_<number>_effect.png",
+                    "BackgroundImage" : "BgForQuali/bg_sector_<number>_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -136,14 +136,14 @@
                 },
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForQuali/bg_purple.png",
+                    "BackgroundImage" : "BgForQuali/bg_purple.png",
                     "Height" : 70,
                     "Width" : 190,
                     "RenderIf" : "{Item.IsOverallFastestSector<number>}",
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForQuali/bg_sector_<number>_effect.png",
+                            "BackgroundImage" : "BgForQuali/bg_sector_<number>_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",

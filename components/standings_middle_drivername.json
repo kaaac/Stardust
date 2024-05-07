@@ -9,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/Standing/bg_drivername.png",
+            "BackgroundImage" : "Standing/bg_drivername.png",
             "Height" : 70,
             "Width" : 400,
             "ColorizeBackground": {
@@ -27,7 +27,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_drivername_effect.png",
+                    "BackgroundImage" : "Standing/bg_drivername_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -54,7 +54,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/Standing/bg_drivername.png",
+            "BackgroundImage" : "Standing/bg_drivername.png",
             "Height" : 70,
             "Width" : 400,
             "ColorizeBackground": {
@@ -72,7 +72,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_drivername_effect.png",
+                    "BackgroundImage" : "Standing/bg_drivername_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",

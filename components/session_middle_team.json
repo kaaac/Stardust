@@ -16,7 +16,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_teamorcar.png",
+            "BackgroundImage" : "BgForRace/bg_teamorcar.png",
             "Height" : 70,
             "Width" : 400,
             "Triggers" : [
@@ -34,7 +34,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_teamorcar_second_color.png",
+                    "BackgroundImage" : "BgForRace/bg_teamorcar_second_color.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -55,7 +55,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForRace/bg_teamorcar_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_teamorcar_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",
@@ -93,7 +93,7 @@
                                 },
                                 {
                                     "BlockType" : "image",
-                                    "Source" : "images/Cars/F1Cars/{Item.Team.Name}.png",
+                                    "Source" : "Cars/F1Cars/{Item.Team.Name}.png",
                                     "Width" : 236,
                                     "RenderIf" : false,
                                     "HorizontalAlignment" : "Left",

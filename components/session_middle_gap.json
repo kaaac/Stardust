@@ -9,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_gap.png",
+            "BackgroundImage" : "BgForRace/bg_gap.png",
             "Height" : 70,
             "Width" : 300,
             "ColorizeBackground": {
@@ -20,7 +20,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_gap_second_color.png",
+                    "BackgroundImage" : "BgForRace/bg_gap_second_color.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -34,7 +34,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/BgForRace/bg_gap_effect.png",
+                            "BackgroundImage" : "BgForRace/bg_gap_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",

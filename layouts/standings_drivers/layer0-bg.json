@@ -2,17 +2,17 @@
     "BlockRoot": {
         "Name": "root",
         "BlockType": "stack",
-        "BackgroundImage" : "images/Background/baag.png",
+        "BackgroundImage" : "Background/baag.png",
         "Items": [
             {
                 "BlockType" : "stack",
-                "BackgroundImage" : "images/Background/bg_caasdategory.png",
+                "BackgroundImage" : "Background/bg_caasdategory.png",
                 "Items" : [
                     {
                         "BlockType": "image",
-                        "BackgroundImage" : "images/bg_effect.png",
+                        "BackgroundImage" : "bg_effect.png",
                         "ImageOptions" : {
-                            "Path": "images/bg_efgfssect.png"
+                            "Path": "bg_efgfssect.png"
                         }
                     }
                 ]

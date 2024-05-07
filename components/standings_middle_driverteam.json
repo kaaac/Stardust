@@ -16,7 +16,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/Standing/bg_teamorcar.png",
+            "BackgroundImage" : "Standing/bg_teamorcar.png",
             "Height" : 70,
             "Width" : 300,
             "ColorizeBackground": {
@@ -39,7 +39,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_teamorcar_second_color.png",
+                    "BackgroundImage" : "Standing/bg_teamorcar_second_color.png",
                     "Height" : 70,
                     "Width" : 300,
                     "Triggers" : [
@@ -57,7 +57,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/Standing/bg_teamorcar_effect.png",
+                            "BackgroundImage" : "Standing/bg_teamorcar_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",
@@ -88,7 +88,7 @@
                                 },
                                 {
                                     "BlockType" : "image",
-                                    "Source" : "images/Cars/F1Cars/{Item.Team.Name}.png",
+                                    "Source" : "Cars/F1Cars/{Item.Team.Name}.png",
                                     "Width" : 236,
                                     "RenderIf" : false,
                                     "HorizontalAlignment" : "Left",
@@ -108,7 +108,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/Standing/bg_teamorcar.png",
+            "BackgroundImage" : "Standing/bg_teamorcar.png",
             "Height" : 70,
             "Width" : 300,
             "ColorizeBackground": {
@@ -131,7 +131,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/Standing/bg_teamorcar_second_color.png",
+                    "BackgroundImage" : "Standing/bg_teamorcar_second_color.png",
                     "Height" : 70,
                     "Width" : 300,
                     "Triggers" : [
@@ -149,7 +149,7 @@
                     "Items" : [
                         {
                             "BlockType" : "stack",
-                            "BackgroundImage" : "images/Standing/bg_teamorcar_effect.png",
+                            "BackgroundImage" : "Standing/bg_teamorcar_effect.png",
                             "Orientation" : "Horizontal",
                             "HorizontalAlignment" : "Center",
                             "VerticalAlginment":"Center",

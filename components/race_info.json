@@ -3,7 +3,7 @@
     "BlockType" : "stack",
     "Height" : 1292,
     "Width" : 958,
-    "BackgroundImage" : "images/BgForRace/bg_info_race.png",
+    "BackgroundImage" : "BgForRace/bg_info_race.png",
     "Orientation" : "Vertical",
     "Items" : [
         {
@@ -23,10 +23,10 @@
             "BlockType" : "image",
             "MarginTop" : 50,
             "Height" : 650,
-            "Source" : "images/CircuitLayout/alltrack/track_{Session.Track.CircuitName}.png",
+            "Source" : "CircuitLayout/alltrack/track_{Session.Track.CircuitName}.png",
             "HorizontalAlignment" : "Center",
             "ImageOptions" : {
-                "DefaultPath" : "images/CircuitLayout/alltrack/track_Monza.png"
+                "DefaultPath" : "CircuitLayout/alltrack/track_Monza.png"
             }
         },
         {
@@ -45,19 +45,17 @@
                             "BlockType" : "text",
                             "Source" : "{Session.Track.CircuitName} - [{Session.SessionType}]",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Bo}"
-                            }
+                            "Height" : 60,
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Bo}"
                         },
                         {
                             "BlockType" : "text",
                             "Source" : " - {Session.TotalLaps} Laps",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            },
+                            "Height" : 60,
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Boi}",
                             "Triggers" : [
                                 {
                                     "Condition" : "{Session.IsLiveData, Converter=BoolReverse}",
@@ -75,26 +73,27 @@
                     "Items" : [
                         {
                             "BlockType" : "image",
-                            "Source" : "images/Weather/weather_{Session.WeatherType}.png",
+                            "VerticalAlignment": "Center",
+                            "Source" : "Weather/weather_{Session.WeatherType}.png",
                             "Height" : 60
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " Air:",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Bo}"
-                            }
+                            "Height" : 60,
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Bo}"
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " {Session.AirTemperatureString}",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            }
+                            "Height" : 60,
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Boi}"
                         }
                     ],
                     "Triggers" : [
@@ -133,19 +132,18 @@
                                             "BlockType" : "text",
                                             "Source" : "Pole - ",
                                             "FontSize" : 40,
-                                            "TextOptions" : {
-                                                "Foreground" : "{ForeWhite}",
-                                                "FontName" : "{TW-Bo}"
-                                            }
+                            "Height" : 60,
+                                            "Foreground" : "{ForeWhite}",
+                                            "FontName" : "{TW-Bo}"
                                         },
                                         {
                                             "BlockType" : "text",
                                             "Source" : " {Item.Driver.Name}",
                                             "FontSize" : 40,
-                                            "TextOptions" : {
-                                                "Foreground" : "{ForeWhite}",
-                                                "FontName" : "{TW-Boi}"
-                                            }
+                            "Height" : 60,
+                                            "Foreground" : "{ForeWhite}",
+                                            "PaddingRight" : 3,
+                                            "FontName" : "{TW-Boi}"
                                         }
                                     ]
                                 }
@@ -160,26 +158,27 @@
                     "Items" : [
                         {
                             "BlockType" : "image",
-                            "Source" : "images/Weather/temperature.png",
+                            "VerticalAlignment": "Center",
+                            "Source" : "Weather/temperature.png",
                             "Height" : 60
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " Track:",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Bo}"
-                            }
+                            "Height" : 60,
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Bo}"
                         },
                         {
                             "BlockType" : "text",
+                            "VerticalAlignment": "Center",
                             "Source" : " {Session.TrackTemperature}°",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            }
+                            "Height" : 60,
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Boi}"
                         }
                     ],
                     "Triggers" : [
@@ -208,19 +207,16 @@
                             "BlockType" : "text",
                             "Source" : "First Grand Prix:",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Bo}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Bo}"
                         },
                         {
                             "BlockType" : "text",
                             "Source" : " {Session.Track.Years}",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "PaddingRight" : 3,
+                            "FontName" : "{TW-Boi}"
                         }
                     ]
                 },
@@ -233,19 +229,16 @@
                             "BlockType" : "text",
                             "Source" : "Turns: ",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Bo}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Bo}"
                         },
                         {
                             "BlockType" : "text",
                             "Source" : " {Session.Track.NumberTurns}",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "PaddingRight" : 3,
+                            "FontName" : "{TW-Boi}"
                         }
                     ]
                 }
@@ -264,21 +257,22 @@
                     "Items" : [
                         {
                             "BlockType" : "text",
-                            "Source" : "Ciruit Length: ",
+                            "Source" : "Circuit Length: ",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Bo}"
-                            }
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Bo}"
                         },
                         {
                             "BlockType" : "text",
                             "Source" : " {Session.Track.Length} km",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
+                            "PaddingRight" : 3,
+                            "FontName" : "{TW-Boi}"
                         }
                     ]
                 },
@@ -290,19 +284,20 @@
                         {
                             "BlockType" : "text",
                             "Source" : "{Session.Track.CountryName}",
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}",
-                                "FontName" : "{TW-Boi}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Boi}"
                         },
                         {
                             "BlockType" : "text",
                             "Source" : "",
+                            "Height" : 47,
+                            "VerticalAlignment": "Center",
                             "FontSize" : 40,
-                            "TextOptions" : {
-                                "Foreground" : "{ForeWhite}"
-                            }
+                            "Foreground" : "{ForeWhite}",
+                            "FontName" : "{TW-Boi}"
                         }
                     ]
                 }

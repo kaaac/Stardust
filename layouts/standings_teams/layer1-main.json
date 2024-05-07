@@ -2,12 +2,12 @@
     "BlockRoot" : {
         "BlockType" : "stack",
         "Orientation" : "Vertical",
-        "BackgroundImage" : "images/Background/bg.png",
+        "BackgroundImage" : "Background/bg.png",
         "Items" : [
             {
                 "BlockType" : "stack",
                 "Orientation" : "Vertical",
-                "BackgroundImage" : "images/Background/bg_category.png",
+                "BackgroundImage" : "Background/bg_category.png",
                 "ColorizeBackground": {
                     "Enabled" : true,
                     "Color": "{Season.MainLeagueCategory.Color}",
@@ -17,7 +17,7 @@
                     {
                         "BlockType" : "stack",
                         "Orientation" : "Vertical",
-                        "BackgroundImage" : "images/Background/bg_effect.png",
+                        "BackgroundImage" : "Background/bg_effect.png",
                         "ColorizeBackground": {
                             "Enabled" : false,
                             "Color": "{Season.MainLeagueCategory.Color}",
@@ -26,9 +26,7 @@
                         "Items" : [
                             {
                                 "BlockType" : "component",
-                                "ComponentOptions" : {
-                                    "ComponentName" : "race_header"
-                                }
+                                "Component" : "race_header"
                             },
                             {
                                 "BlockType" : "stack",
@@ -46,9 +44,7 @@
                                             {
                                                 "BlockType" : "component",
                                                 "MarginBottom" : 50,
-                                                "ComponentOptions" : {
-                                                    "ComponentName" : "standings_team_info"
-                                                }
+                                                "Component" : "standings_team_info"
                                             }
                                         ]
                                     },
@@ -74,7 +70,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "session_middle_position"
+                                                        "Component": "session_middle_position"
                                                     }
                                                 },
                                                 {
@@ -83,7 +79,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "standings_middle_team"
+                                                        "Component": "standings_middle_team"
                                                     }
                                                 },
                                                 {
@@ -92,7 +88,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "standings_middle_car"
+                                                        "Component": "standings_middle_car"
                                                     }
                                                 },
                                                 {
@@ -101,7 +97,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "standings_points"
+                                                        "Component": "standings_points"
                                                     }
                                                 },
                                                 {
@@ -110,7 +106,7 @@
                                                     "Template" : 
                                                     {
                                                         "BlockType" : "component",
-                                                        "ComponentName": "position_jump"
+                                                        "Component": "position_jump"
                                                     }
                                                 },
                                                 {
@@ -118,7 +114,7 @@
                                                     "Name" : "Standings-start",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data_start"
+                                                        "Component" : "standings_data_start"
                                                     }
                                                 },
                                                 {
@@ -126,7 +122,7 @@
                                                     "Name" : "Data",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data",
+                                                        "Component" : "standings_data",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data" : "{Item.CountP1}",
@@ -141,7 +137,7 @@
                                                     "Name" : "Data",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data",
+                                                        "Component" : "standings_data",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data" : "{Item.CountP2}",
@@ -156,7 +152,7 @@
                                                     "Name" : "Data",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data",
+                                                        "Component" : "standings_data",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data" : "{Item.CountP3}",
@@ -171,7 +167,7 @@
                                                     "Name" : "Data",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data",
+                                                        "Component" : "standings_data",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data" : "{Item.RaceFastestLapCount}",
@@ -186,7 +182,7 @@
                                                     "Name" : "Data",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data",
+                                                        "Component" : "standings_data",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data" : "{Item.CountQualP1}",
@@ -201,7 +197,7 @@
                                                     "Name" : "Data",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data",
+                                                        "Component" : "standings_data",
                                                         "ComponentOptions" : {
                                                             "Vars" : {
                                                                 "data" : "{Item.EventsCount}",
@@ -216,7 +212,7 @@
                                                     "Name" : "Standings-finish",
                                                     "Template" : {
                                                         "BlockType" : "component",
-                                                        "ComponentName" : "standings_data_finish"
+                                                        "Component" : "standings_data_finish"
                                                     }
                                                 }
                                             ]

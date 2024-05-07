@@ -9,7 +9,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_pts.png",
+            "BackgroundImage" : "BgForRace/bg_pts.png",
             "Height" : 70,
             "Width" : 112,
             "ColorizeBackground": {
@@ -27,7 +27,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_pts_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_pts_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",
@@ -55,7 +55,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_pts.png",
+            "BackgroundImage" : "BgForRace/bg_pts.png",
             "Height" : 70,
             "Width" : 112,
             "ColorizeBackground": {
@@ -73,7 +73,7 @@
             "Items" : [
                 {
                     "BlockType" : "stack",
-                    "BackgroundImage" : "images/BgForRace/bg_pts_effect.png",
+                    "BackgroundImage" : "BgForRace/bg_pts_effect.png",
                     "Orientation" : "Horizontal",
                     "HorizontalAlignment" : "Center",
                     "VerticalAlginment":"Center",

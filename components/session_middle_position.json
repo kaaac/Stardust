@@ -10,7 +10,7 @@
     "Items": [
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberEquals, Parameter=1}",
             "Height" : 70,
             "Width" : 70,
@@ -28,7 +28,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberEquals, Parameter=2}",
             "Height" : 70,
             "Width" : 70,
@@ -46,7 +46,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberEquals, Parameter=3}",
             "Height" : 70,
             "Width" : 70,
@@ -64,7 +64,7 @@
         },
         {
             "BlockType" : "stack",
-            "BackgroundImage" : "images/BgForRace/bg_position.png",
+            "BackgroundImage" : "BgForRace/bg_position.png",
             "RenderIf" : "{Item.Position, Converter=NumberGreater, Parameter=3}",
             "Height" : 70,
             "Width" : 70,
