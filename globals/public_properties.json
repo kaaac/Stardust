@@ -8,10 +8,17 @@
             "Category": "Placeholders"
         },
         {
-            "Name" : "F1Mode",
-            "PublicName" : "F1Mode",
+            "Name" : "ShowCars",
+            "PublicName": "ShowCars",
+            "Description" : "Show Cars at Teams Column. \nCar livery needed (Built in for F1/F2 2023/2024, ACC)",
             "Type": "Bool",
-            "Description": "Add F1 Cars to results to visualize teams",
+            "Category": "Theme Mode"
+        },
+        {
+            "Name" : "ShowF1DriverFaces",
+            "PublicName" : "ShowF1DriverFaces",
+            "Type": "Bool",
+            "Description": "Show F1 Driver Faces Next to Driver Numbers",
             "DefaultValue" : true,
             "Category": "Theme Mode"
         },

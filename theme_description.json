@@ -1,10 +1,12 @@
 {
   "Name": "Stardust",
   "Author": "Caccia & Kaac",
-  "Version": "4.0.0",
+  "Version": "4.1.0",
   "Description" : "Winner of RLT 2023 Theme Contest",
   "ThemeId": "kaaac.stardust",
   "DownloadUrl": "https://github.com/kaaac/Stardust/releases/download/4/Stardust.zip",
+  "DefaultLocalizationId": "en-US",
+  "ForceLiveriesLoading" : true,
   "Links": [
     {
       "Url": "https://github.com/kaaac/Stardust",

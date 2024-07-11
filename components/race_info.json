@@ -122,6 +122,7 @@
                             "BlockType" : "itemstack",
                             "ItemStackOptions" : {
                                 "ItemSource" : "{Session.Drivers}",
+                                "OrderBy": "{Item.GridPosition}",
                                 "Limit" : 1,
                                 "ItemTemplate" : 
                                 {

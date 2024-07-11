@@ -8,7 +8,7 @@
     "Width" : 150,
     "Triggers" : [
         {
-            "Condition" : "{F1Mode}",
+            "Condition" : "{ShowCars}",
             "Property" : "Width",
             "Value" : "300"
         }
@@ -21,7 +21,7 @@
             "Width" : 150,
             "Triggers" : [
                 {
-                    "Condition" : "{F1Mode}",
+                    "Condition" : "{ShowCars}",
                     "Property" : "Width",
                     "Value" : "300"
                 }
@@ -42,7 +42,7 @@
                     "Width" : 150,
                     "Triggers" : [
                         {
-                            "Condition" : "{F1Mode}",
+                            "Condition" : "{ShowCars}",
                             "Property" : "Width",
                             "Value" : "300"
                         }
@@ -63,7 +63,7 @@
                             "Width" : 150,
                             "Triggers" : [
                                 {
-                                    "Condition" : "{F1Mode}",
+                                    "Condition" : "{ShowCars}",
                                     "Property" : "Width",
                                     "Value" : "300"
                                 }
@@ -83,7 +83,7 @@
                                     "FontName" : "{TW-Bo}",
                                     "Triggers" : [
                                         {
-                                            "Condition" : "{F1Mode}",
+                                            "Condition" : "{ShowCars}",
                                             "Property" : "RenderIf",
                                             "Value" : "false"
                                         }
@@ -91,13 +91,13 @@
                                 },
                                 {
                                     "BlockType" : "image",
-                                    "Source" : "Cars/F1Cars/{Item.Team.Name}.png",
+                                    "Source" : "{Item.Team.LiveryPath}",
                                     "Width" : 236,
                                     "RenderIf" : false,
                                     "HorizontalAlignment" : "Left",
                                     "Triggers" : [
                                         {
-                                            "Condition" : "{F1Mode}",
+                                            "Condition" : "{ShowCars}",
                                             "Property" : "RenderIf",
                                             "Value" : "true"
                                         }

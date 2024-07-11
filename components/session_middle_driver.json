@@ -9,7 +9,7 @@
     "MarginRight" : 10,
     "Triggers" : [
         {
-            "Condition" : "{F1Mode}",
+            "Condition" : "{ShowF1DriverFaces}",
             "Property" : "Width",
             "Value" : "126"
         }
@@ -22,7 +22,7 @@
             "Width" : 70,
             "Triggers" : [
                 {
-                    "Condition" : "{F1Mode}",
+                    "Condition" : "{ShowF1DriverFaces}",
                     "Setters" : [
                         {
                             "Property" : "Width",
@@ -52,7 +52,7 @@
                     "Width" : 70,
                     "Triggers" : [
                         {
-                            "Condition" : "{F1Mode}",
+                            "Condition" : "{ShowF1DriverFaces}",
                             "Setters" : [
                                 {
                                     "Property" : "Width",
@@ -83,7 +83,7 @@
                             },
                             "Triggers" : [
                                 {
-                                    "Condition" : "{F1Mode}",
+                                    "Condition" : "{ShowF1DriverFaces}",
                                     "Property" : "Width",
                                     "Value" : "63"
                                 }
@@ -97,7 +97,7 @@
                             "MarginTop" : 7,
                             "Triggers" : [
                                 {
-                                    "Condition" : "{F1Mode}",
+                                    "Condition" : "{ShowF1DriverFaces}",
                                     "Property" : "RenderIf",
                                     "Value" : "true"
                                 }
